@@ -1,0 +1,2601 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+    <header>
+        <resultCode>00</resultCode>
+        <resultMsg>NORMAL SERVICE.</resultMsg>
+    </header>
+    <body>
+        <items>
+            <item>
+                <addr>경상북도 영천시 고경면 청정리 700 국립영천호국원 입구 근처 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12395</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5609</csId>
+                <csNm>국립영천호국원</csNm>
+                <lat>35.97862122</lat>
+                <longi>129.10940639</longi>
+                <statUpdateDatetime>2023-06-15 15:40:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 영천시 대창면 대창리 1028 대창면문화센터 입구 근처 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12397</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>10</cpTp>
+                <csId>5610</csId>
+                <csNm>대창면문화센터</csNm>
+                <lat>35.87528566</lat>
+                <longi>128.89364139</longi>
+                <statUpdateDatetime>2023-06-15 15:41:03</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 중구 항동7가 58-70 연안동 행정복지센터 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12419</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5623</csId>
+                <csNm>연안동 행정복지센터</csNm>
+                <lat>37.45317598308719</lat>
+                <longi>126.60445380373768</longi>
+                <statUpdateDatetime>2023-06-15 15:40:28</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 부천시 도당동 185-148 고객주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>378</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>10</cpTp>
+                <csId>5648</csId>
+                <csNm>부천지사</csNm>
+                <lat>37.507352</lat>
+                <longi>126.786477</longi>
+                <statUpdateDatetime>2023-06-15 15:45:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 부천시 도당동 185-148 고객주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>7762</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>10</cpTp>
+                <csId>5648</csId>
+                <csNm>부천지사</csNm>
+                <lat>37.507352</lat>
+                <longi>126.786477</longi>
+                <statUpdateDatetime>2023-06-15 15:40:21</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>대구광역시 동구 효목동 626 사옥 앞편 주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12466</cpId>
+                <cpNm>완속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5644</csId>
+                <csNm>동대구지사</csNm>
+                <lat>35.874518751879556</lat>
+                <longi>128.64073646416347</longi>
+                <statUpdateDatetime>2023-06-15 15:42:44</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>대구광역시 동구 효목동 626 사옥 앞편 주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12465</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5644</csId>
+                <csNm>동대구지사</csNm>
+                <lat>35.874518751879556</lat>
+                <longi>128.64073646416347</longi>
+                <statUpdateDatetime>2023-06-15 15:45:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 강릉시 사천면 방동리 807-1 강원지방기상청</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12201</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5492</csId>
+                <csNm>강원지방기상청</csNm>
+                <lat>37.804075714693894</lat>
+                <longi>128.85395664916308</longi>
+                <statUpdateDatetime>2023-06-15 15:40:36</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 강릉시 구정면 제비리 888 구정휴게소(동해방향)</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12203</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5493</csId>
+                <csNm>(고속도로)구정휴게소 동해방향</csNm>
+                <lat>37.72263751062491</lat>
+                <longi>128.85162657076708</longi>
+                <statUpdateDatetime>2023-06-15 15:41:15</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 영양군 영양읍 감천리 1 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12198</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5465</csId>
+                <csNm>영양군 골프연습장 충전소</csNm>
+                <lat>36.6458325890778</lat>
+                <longi>129.10182141049341</longi>
+                <statUpdateDatetime>2023-06-15 15:40:37</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 강릉시 구정면 제비리 888 구정휴게소(동해방향)</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12205</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5493</csId>
+                <csNm>(고속도로)구정휴게소 동해방향</csNm>
+                <lat>37.72263751062491</lat>
+                <longi>128.85162657076708</longi>
+                <statUpdateDatetime>2023-06-15 15:45:02</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 삼척시 원덕읍 삼척로 734 (호산리) 한국남부발전 한마음 스포츠센터</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12209</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5496</csId>
+                <csNm>한국남부발전 복지관 급속 충전소</csNm>
+                <lat>37.1037</lat>
+                <longi>129.2023</longi>
+                <statUpdateDatetime>2023-06-15 15:41:35</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 횡성군 안흥면 안흥리 1063 찐빵마을 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12227</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5504</csId>
+                <csNm>안흥찐빵모락모락마을</csNm>
+                <lat>37.410166</lat>
+                <longi>128.155950</longi>
+                <statUpdateDatetime>2023-06-15 15:40:57</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 양주시 남면 상수리 667-10 검준일반산업단지 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12312</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5431</csId>
+                <csNm>검준일반산업단지</csNm>
+                <lat>37.8864719</lat>
+                <longi>126.995745</longi>
+                <statUpdateDatetime>2023-06-15 15:40:51</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>충청북도 청주시 흥덕구 송절동 838 고객주차장 입구</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12343</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5566</csId>
+                <csNm>강서2동 행정복지센터</csNm>
+                <lat>36.66609575163462</lat>
+                <longi>127.45372103309655</longi>
+                <statUpdateDatetime>2023-06-15 15:43:04</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 금정구 구서동 1032-6 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12399</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5612</csId>
+                <csNm>(전주거치형)구서동1</csNm>
+                <lat>35.25511133450156</lat>
+                <longi>129.0848044503765</longi>
+                <statUpdateDatetime>2023-06-09 19:40:59</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 금정구 구서동 1026-7 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12400</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5614</csId>
+                <csNm>(전주거치형)구서동2</csNm>
+                <lat>35.25672545118575</lat>
+                <longi>129.0845464236318</longi>
+                <statUpdateDatetime>2023-06-07 20:34:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 해운대구 우동 1102-223 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12401</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5615</csId>
+                <csNm>(전주거치형)장산로주거지2</csNm>
+                <lat>35.171392032690235</lat>
+                <longi>129.14123091541114</longi>
+                <statUpdateDatetime>2023-06-14 10:47:24</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 도봉구 도봉동 626-20 민원인 주차장 후문</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12418</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5625</csId>
+                <csNm>서울북부지검</csNm>
+                <lat>37.675807183286444</lat>
+                <longi>127.04649009657349</longi>
+                <statUpdateDatetime>2023-06-15 15:41:07</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 도봉구 도봉동 626-20 민원인 주차장 후문</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12415</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>3</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5625</csId>
+                <csNm>서울북부지검</csNm>
+                <lat>37.675807183286444</lat>
+                <longi>127.04649009657349</longi>
+                <statUpdateDatetime>2023-06-15 15:41:49</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 도봉구 도봉동 626-20 민원인 주차장 후문</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12417</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5625</csId>
+                <csNm>서울북부지검</csNm>
+                <lat>37.675807183286444</lat>
+                <longi>127.04649009657349</longi>
+                <statUpdateDatetime>2023-06-15 15:41:11</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 도봉구 도봉동 626-20 민원인 주차장 후문</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12416</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5625</csId>
+                <csNm>서울북부지검</csNm>
+                <lat>37.675807183286444</lat>
+                <longi>127.04649009657349</longi>
+                <statUpdateDatetime>2023-06-15 15:41:20</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>대전광역시 유성구 상대동 488 박물관 옥외 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12423</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>445</csId>
+                <csNm>대전시립박물관</csNm>
+                <lat>36.336701</lat>
+                <longi>127.335319</longi>
+                <statUpdateDatetime>2023-06-15 15:40:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 연수구 송도동 300-3 1층 지상주차장 24번 기둥</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12448</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5635</csId>
+                <csNm>국제여객터미널</csNm>
+                <lat>37.4236458</lat>
+                <longi>126.6052785</longi>
+                <statUpdateDatetime>2023-06-15 15:41:47</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 정선군 정선읍 봉양리 80-5 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12450</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>3</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5642</csId>
+                <csNm>정선군보건소</csNm>
+                <lat>37.37975633625133</lat>
+                <longi>128.67102711231425</longi>
+                <statUpdateDatetime>2023-06-15 15:41:12</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 계양구 장기동 130 주민센터 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12323</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>3</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5550</csId>
+                <csNm>계양1동행정복지센터</csNm>
+                <lat>37.57654994873408</lat>
+                <longi>126.73397064844451</longi>
+                <statUpdateDatetime>2023-06-15 15:43:17</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>제주특별자치도 서귀포시 상예동 2676 동쪽 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12378</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5585</csId>
+                <csNm>에코라운지</csNm>
+                <lat>33.26491166941601</lat>
+                <longi>126.38860663661911</longi>
+                <statUpdateDatetime>2023-06-15 15:41:47</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>제주특별자치도 서귀포시 상예동 2676 동쪽 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12377</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5585</csId>
+                <csNm>에코라운지</csNm>
+                <lat>33.26491166941601</lat>
+                <longi>126.38860663661911</longi>
+                <statUpdateDatetime>2023-06-15 15:41:42</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>제주특별자치도 서귀포시 상예동 2676 동쪽 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12375</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5585</csId>
+                <csNm>에코라운지</csNm>
+                <lat>33.26491166941601</lat>
+                <longi>126.38860663661911</longi>
+                <statUpdateDatetime>2023-06-15 15:45:01</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라북도 임실군 강진면 백련리 551 국립임실호국원 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12393</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5601</csId>
+                <csNm>국립임실호국원</csNm>
+                <lat>35.551192699098166</lat>
+                <longi>127.18761888589684</longi>
+                <statUpdateDatetime>2023-06-15 15:42:34</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 경산시 압량읍 당리리 471-1 입구</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12394</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5604</csId>
+                <csNm>당리 다목적광장 EVC</csNm>
+                <lat>35.8170000917399</lat>
+                <longi>128.79449556953997</longi>
+                <statUpdateDatetime>2023-06-15 15:42:56</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 금정구 남산동 91-10 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12398</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5611</csId>
+                <csNm>(전주거치형)남산동</csNm>
+                <lat>35.26733971346166</lat>
+                <longi>129.09224883559415</longi>
+                <statUpdateDatetime>2023-06-15 15:41:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 부산진구 전포동 190 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12406</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5619</csId>
+                <csNm>(전주거치형)전포동주거지</csNm>
+                <lat>35.1592446115555</lat>
+                <longi>129.07009742006508</longi>
+                <statUpdateDatetime>2023-06-15 15:40:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 해운대구 반여동 산 130-11 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12404</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5617</csId>
+                <csNm>(전주거치형)신선천주거지1</csNm>
+                <lat>35.20289539553814</lat>
+                <longi>129.13527015025562</longi>
+                <statUpdateDatetime>2023-06-06 12:31:51</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 부산진구 범천동 1090-12 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12409</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5622</csId>
+                <csNm>(전주거치형)범천동신암로2</csNm>
+                <lat>35.15439746911869</lat>
+                <longi>129.04843542838384</longi>
+                <statUpdateDatetime>2023-06-15 15:40:08</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 부산진구 범천동 1090-12 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12408</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5621</csId>
+                <csNm>(전주거치형)범천동신암로1</csNm>
+                <lat>35.15484232481926</lat>
+                <longi>129.04797475933</longi>
+                <statUpdateDatetime>2023-06-15 04:37:52</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 부산진구 범전동 68-21 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12405</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5618</csId>
+                <csNm>(전주거치형)시민공원옆주거지</csNm>
+                <lat>35.1694438733983</lat>
+                <longi>129.0621524938099</longi>
+                <statUpdateDatetime>2023-06-15 15:43:56</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라북도 익산시 팔봉동 850 지사 건물 옆 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>497</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>10</cpTp>
+                <csId>5691</csId>
+                <csNm>익산지사 02</csNm>
+                <lat>35.96160585915076</lat>
+                <longi>127.0047861942036</longi>
+                <statUpdateDatetime>2023-06-15 15:42:15</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 태백시 황지동 244-52 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12217</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5502</csId>
+                <csNm>태백국민체육센터</csNm>
+                <lat>37.1626942340464</lat>
+                <longi>128.985355554886</longi>
+                <statUpdateDatetime>2023-06-15 15:40:42</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 춘천시 동내면 사암리 산 121-1 부산방향 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12221</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5485</csId>
+                <csNm>(고속도로)춘천휴게소 부산방향</csNm>
+                <lat>37.81263676242214</lat>
+                <longi>127.76653960809253</longi>
+                <statUpdateDatetime>2023-06-15 15:42:17</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 춘천시 동내면 사암리 산 121-1 부산방향 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12218</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5485</csId>
+                <csNm>(고속도로)춘천휴게소 부산방향</csNm>
+                <lat>37.81263676242214</lat>
+                <longi>127.76653960809253</longi>
+                <statUpdateDatetime>2023-06-15 15:41:43</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 춘천시 동내면 사암리 산 121-1 부산방향 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12219</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5485</csId>
+                <csNm>(고속도로)춘천휴게소 부산방향</csNm>
+                <lat>37.81263676242214</lat>
+                <longi>127.76653960809253</longi>
+                <statUpdateDatetime>2023-06-15 15:43:23</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 춘천시 동내면 사암리 산 121-1 부산방향 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12220</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5485</csId>
+                <csNm>(고속도로)춘천휴게소 부산방향</csNm>
+                <lat>37.81263676242214</lat>
+                <longi>127.76653960809253</longi>
+                <statUpdateDatetime>2023-06-15 15:42:31</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>대구광역시 달서구 갈산동 971-5 후문</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12314</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5545</csId>
+                <csNm>한국산업인력공단</csNm>
+                <lat>35.836122</lat>
+                <longi>128.506474</longi>
+                <statUpdateDatetime>2023-06-15 15:45:03</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 노원구 공릉동 172 국제관,테크노큐브,프론티어관</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12346</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>3816</csId>
+                <csNm>서울과학기술대학교</csNm>
+                <lat>37.63300771189051</lat>
+                <longi>127.07754193602831</longi>
+                <statUpdateDatetime>2023-06-15 15:40:57</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 용인시 처인구 남사읍 완장리 952-4 지하주차장2층</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12411</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5597</csId>
+                <csNm>남사스포츠센터</csNm>
+                <lat>37.157378</lat>
+                <longi>127.173768</longi>
+                <statUpdateDatetime>2023-06-15 15:40:37</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 용인시 처인구 남사읍 완장리 952-4 지하주차장2층</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12410</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5597</csId>
+                <csNm>남사스포츠센터</csNm>
+                <lat>37.157378</lat>
+                <longi>127.173768</longi>
+                <statUpdateDatetime>2023-06-15 15:45:10</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 포항시 북구 용흥동 101-4 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12413</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5603</csId>
+                <csNm>동북지방통계청 포항사무소</csNm>
+                <lat>36.03482004021974</lat>
+                <longi>129.35669816799537</longi>
+                <statUpdateDatetime>2023-06-15 15:40:25</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 포항시 북구 용흥동 101-4 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12414</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5603</csId>
+                <csNm>동북지방통계청 포항사무소</csNm>
+                <lat>36.03482004021974</lat>
+                <longi>129.35669816799537</longi>
+                <statUpdateDatetime>2023-06-15 15:40:52</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 동해시 이로동 183-2 삼화동 행정복지센터</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12444</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5636</csId>
+                <csNm>삼화동 행정복지센터 전기차 충전소</csNm>
+                <lat>33</lat>
+                <longi>124</longi>
+                <statUpdateDatetime>2023-06-15 15:42:03</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 속초시 노학동 573-4 속초연수원 주차장 내</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12520</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>4300</csId>
+                <csNm>속초연수원</csNm>
+                <lat>38.19001262988523</lat>
+                <longi>128.5518064204755</longi>
+                <statUpdateDatetime>2023-06-15 15:40:54</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 횡성군 강림면 강림리 803-2 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12226</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5503</csId>
+                <csNm>강림 건강복지센터</csNm>
+                <lat>37.360728525398</lat>
+                <longi>128.128886769859</longi>
+                <statUpdateDatetime>2023-06-15 15:40:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라남도 순천시 대대동 162-2 순천만습지 주차장 출구방향</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12254</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5315</csId>
+                <csNm>순천만습지주차장</csNm>
+                <lat>34.88705139917769</lat>
+                <longi>127.50871940154806</longi>
+                <statUpdateDatetime>2023-06-15 14:41:05</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라남도 순천시 대대동 162-2 순천만습지 주차장 출구방향</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12255</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5315</csId>
+                <csNm>순천만습지주차장</csNm>
+                <lat>34.88705139917769</lat>
+                <longi>127.50871940154806</longi>
+                <statUpdateDatetime>2023-06-15 14:37:10</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 중구 운북동 465-37 영종역 2번출구 공영주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12273</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5423</csId>
+                <csNm>영종역 공영주차장</csNm>
+                <lat>37.510981</lat>
+                <longi>126.524317</longi>
+                <statUpdateDatetime>2023-06-15 15:41:08</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 부평구 청천동 113 청천천공영주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12342</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5162</csId>
+                <csNm>청천천공영주차장</csNm>
+                <lat>37.51672924803251</lat>
+                <longi>126.71506679706414</longi>
+                <statUpdateDatetime>2023-06-15 15:43:25</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 강서구 낙동북로 477 주차장입구옆</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12380</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>3808</csId>
+                <csNm>강서구청 주차장</csNm>
+                <lat>35.212533</lat>
+                <longi>128.980755</longi>
+                <statUpdateDatetime>2023-06-14 12:22:28</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 강서구 낙동북로 477 주차장입구옆</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12379</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>3808</csId>
+                <csNm>강서구청 주차장</csNm>
+                <lat>35.212533</lat>
+                <longi>128.980755</longi>
+                <statUpdateDatetime>2023-06-15 15:41:10</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>충청북도 충주시 목행동 426-4 지상 주차장 입구 좌측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12382</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5596</csId>
+                <csNm>충주시 농수산물도매시장</csNm>
+                <lat>37.005587807670714</lat>
+                <longi>127.92400834338554</longi>
+                <statUpdateDatetime>2023-06-15 08:30:15</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 남양주시 별내동 2190-2 정문 왼편</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12424</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5602</csId>
+                <csNm>수도권119특수구조대</csNm>
+                <lat>37.671133296452055</lat>
+                <longi>127.11077010995647</longi>
+                <statUpdateDatetime>2023-06-15 15:40:58</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 구리시 교문동 390-1 구리시청 2주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12426</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5568</csId>
+                <csNm>구리시청</csNm>
+                <lat>37.594727253586605</lat>
+                <longi>127.13080652389698</longi>
+                <statUpdateDatetime>2023-06-15 15:40:50</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 구리시 교문동 390-1 구리시청 2주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12425</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5568</csId>
+                <csNm>구리시청</csNm>
+                <lat>37.594727253586605</lat>
+                <longi>127.13080652389698</longi>
+                <statUpdateDatetime>2023-06-15 15:40:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 구리시 교문동 736-3 주차장 1층</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12427</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5569</csId>
+                <csNm>교문동주차빌딩</csNm>
+                <lat>37.596899917375055</lat>
+                <longi>127.13566249116782</longi>
+                <statUpdateDatetime>2023-06-15 15:40:52</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 구리시 교문동 736-3 주차장 1층</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12428</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5569</csId>
+                <csNm>교문동주차빌딩</csNm>
+                <lat>37.596899917375055</lat>
+                <longi>127.13566249116782</longi>
+                <statUpdateDatetime>2023-06-15 15:40:39</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라남도 광양시 중동 308-124 중앙하수처리장 정문 쪽 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12429</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5608</csId>
+                <csNm>중앙하수처리장</csNm>
+                <lat>34.929358420884554</lat>
+                <longi>127.6891769382542</longi>
+                <statUpdateDatetime>2023-06-15 15:40:44</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 춘천시 효자동 192-1 자연과학대학 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12430</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5628</csId>
+                <csNm>강원대학교</csNm>
+                <lat>37.87256836768867</lat>
+                <longi>127.74169026328086</longi>
+                <statUpdateDatetime>2023-06-15 15:44:13</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 강화군 불은면 삼성리 1027-42 진입로 초입 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12443</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5634</csId>
+                <csNm>농업기술센터</csNm>
+                <lat>37.703319</lat>
+                <longi>126.434468</longi>
+                <statUpdateDatetime>2023-06-15 15:40:54</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라남도 나주시 빛가람동 301 통신전파진흥원 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12463</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5646</csId>
+                <csNm>통신전파진흥원 전기차충전소</csNm>
+                <lat>35.01995538281936</lat>
+                <longi>126.79476216903949</longi>
+                <statUpdateDatetime>2023-06-15 15:40:41</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라남도 나주시 빛가람동 301 통신전파진흥원 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12462</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5646</csId>
+                <csNm>통신전파진흥원 전기차충전소</csNm>
+                <lat>35.01995538281936</lat>
+                <longi>126.79476216903949</longi>
+                <statUpdateDatetime>2023-06-15 15:40:37</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>울산광역시 중구 학성동 409-1 울산MBC 입구</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12514</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>10</cpTp>
+                <csId>5676</csId>
+                <csNm>울산MBC</csNm>
+                <lat>35.560804517904266</lat>
+                <longi>129.33258528517035</longi>
+                <statUpdateDatetime>2023-06-15 15:43:29</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 인제군 인제읍 상동리 289 인제전통시장 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12518</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5670</csId>
+                <csNm>인제전통시장</csNm>
+                <lat>38.067264862670335</lat>
+                <longi>128.1714725763827</longi>
+                <statUpdateDatetime>2023-06-15 15:40:01</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 연수구 동춘동 926 지하주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>11910</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5295</csId>
+                <csNm>홈플러스 인천연수점</csNm>
+                <lat>37.405906228017216</lat>
+                <longi>126.68361036155045</longi>
+                <statUpdateDatetime>2023-06-15 15:41:06</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 연수구 동춘동 926 지하주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>11911</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5295</csId>
+                <csNm>홈플러스 인천연수점</csNm>
+                <lat>37.405906228017216</lat>
+                <longi>126.68361036155045</longi>
+                <statUpdateDatetime>2023-06-15 15:41:04</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 연수구 동춘동 926 지하주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>11912</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5295</csId>
+                <csNm>홈플러스 인천연수점</csNm>
+                <lat>37.405906228017216</lat>
+                <longi>126.68361036155045</longi>
+                <statUpdateDatetime>2023-06-15 15:41:11</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 홍천군 화촌면 군업리 산 240-5 LPG충전소 우측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12222</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5488</csId>
+                <csNm>(고속도로)홍천휴게소 양양방향</csNm>
+                <lat>37.75727182855603</lat>
+                <longi>128.0042462601478</longi>
+                <statUpdateDatetime>2023-06-15 15:44:43</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 홍천군 화촌면 군업리 산 240-5 LPG충전소 우측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12223</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5488</csId>
+                <csNm>(고속도로)홍천휴게소 양양방향</csNm>
+                <lat>37.75727182855603</lat>
+                <longi>128.0042462601478</longi>
+                <statUpdateDatetime>2023-06-15 15:41:57</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 홍천군 화촌면 군업리 산 240-5 LPG충전소 우측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12225</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5488</csId>
+                <csNm>(고속도로)홍천휴게소 양양방향</csNm>
+                <lat>37.75727182855603</lat>
+                <longi>128.0042462601478</longi>
+                <statUpdateDatetime>2023-06-15 15:43:24</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 홍천군 화촌면 군업리 산 240-5 LPG충전소 우측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12224</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5488</csId>
+                <csNm>(고속도로)홍천휴게소 양양방향</csNm>
+                <lat>37.75727182855603</lat>
+                <longi>128.0042462601478</longi>
+                <statUpdateDatetime>2023-06-15 15:45:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 원주시 문막읍 원문로 1234 (동화리, 문막하행휴게소) 지상주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12232</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5506</csId>
+                <csNm>(고속도로)문막휴게소 강릉방향</csNm>
+                <lat>37.33457627822361</lat>
+                <longi>127.85764772960239</longi>
+                <statUpdateDatetime>2023-06-15 15:41:20</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 원주시 호저면 마근거리길 110 (옥산리, 원주(춘천방향)휴게소) 지상주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12235</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5507</csId>
+                <csNm>(고속도로)원주휴게소 춘천방향</csNm>
+                <lat>37.433970757612045</lat>
+                <longi>127.9316159949919</longi>
+                <statUpdateDatetime>2023-06-15 15:43:52</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 영월군 영월읍 하송리 373-1 공용주차장 위치</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12236</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5490</csId>
+                <csNm>영월군공용주차장</csNm>
+                <lat>37.17886552933195</lat>
+                <longi>128.45855513971503</longi>
+                <statUpdateDatetime>2023-06-15 15:40:34</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 원주시 문막읍 원문로 1234 (동화리, 문막하행휴게소) 지상주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12230</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5506</csId>
+                <csNm>(고속도로)문막휴게소 강릉방향</csNm>
+                <lat>37.33457627822361</lat>
+                <longi>127.85764772960239</longi>
+                <statUpdateDatetime>2023-06-15 15:42:03</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 원주시 문막읍 원문로 1234 (동화리, 문막하행휴게소) 지상주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12231</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5506</csId>
+                <csNm>(고속도로)문막휴게소 강릉방향</csNm>
+                <lat>37.33457627822361</lat>
+                <longi>127.85764772960239</longi>
+                <statUpdateDatetime>2023-06-15 15:40:48</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 원주시 문막읍 원문로 1234 (동화리, 문막하행휴게소) 지상주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12234</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5506</csId>
+                <csNm>(고속도로)문막휴게소 강릉방향</csNm>
+                <lat>37.33457627822361</lat>
+                <longi>127.85764772960239</longi>
+                <statUpdateDatetime>2023-06-15 15:41:09</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 영월군 영월읍 하송리 242 군청 보건소 뒤</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12233</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5489</csId>
+                <csNm>영월군청 전기차충전소</csNm>
+                <lat>37.184008</lat>
+                <longi>128.461842</longi>
+                <statUpdateDatetime>2023-06-15 15:40:54</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 광주시 곤지암읍 곤지암리 453-3 곤지암 배수펌프장 공영주차장 안</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12309</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5523</csId>
+                <csNm>곤지암 배수펌프장 공영주차장 충전소</csNm>
+                <lat>37.35072730585719</lat>
+                <longi>127.33771511316807</longi>
+                <statUpdateDatetime>2023-06-15 15:45:01</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 남양주시 별내동 2190-2 정문 왼편</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12388</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5602</csId>
+                <csNm>수도권119특수구조대</csNm>
+                <lat>37.671133296452055</lat>
+                <longi>127.11077010995647</longi>
+                <statUpdateDatetime>2023-06-15 15:42:35</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>충청북도 보은군 내북면 창리 63-1 정문 오른쪽</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12437</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5630</csId>
+                <csNm>내북면사무소</csNm>
+                <lat>36.57801028883558</lat>
+                <longi>127.66373296025804</longi>
+                <statUpdateDatetime>2023-06-15 15:42:12</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 안동시 동부동 85-3 공영주차장 1층</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12441</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5627</csId>
+                <csNm>웅부공원 공영주차장</csNm>
+                <lat>36.565614</lat>
+                <longi>128.732862</longi>
+                <statUpdateDatetime>2023-06-15 15:40:52</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 영덕군 영덕읍 우곡리 286 사옥내 주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12455</cpId>
+                <cpNm>완속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>3</cpTp>
+                <csId>5643</csId>
+                <csNm>영덕지사(공용)</csNm>
+                <lat>36.41145</lat>
+                <longi>129.375104</longi>
+                <statUpdateDatetime>2023-06-15 15:44:20</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 영덕군 영덕읍 우곡리 286 사옥내 주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12454</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>3</cpTp>
+                <csId>5643</csId>
+                <csNm>영덕지사(공용)</csNm>
+                <lat>36.41145</lat>
+                <longi>129.375104</longi>
+                <statUpdateDatetime>2023-06-15 15:45:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 해운대구 좌동 1427 주차장내</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12303</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5539</csId>
+                <csNm>아세안문화원</csNm>
+                <lat>35.17521352534455</lat>
+                <longi>129.1819528416682</longi>
+                <statUpdateDatetime>2023-06-15 15:40:59</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 중랑구 신내동 316 장례식장 뒷편 전기차충전소</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12334</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5563</csId>
+                <csNm>서울의료원</csNm>
+                <lat>37.6128812</lat>
+                <longi>127.0994340</longi>
+                <statUpdateDatetime>2023-06-15 15:41:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>충청북도 충주시 봉방동 21-38 지상주차장 입구 우측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12381</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5595</csId>
+                <csNm>근로복지공단 충주지사</csNm>
+                <lat>36.9729951151103</lat>
+                <longi>127.92190437416704</longi>
+                <statUpdateDatetime>2023-06-15 15:42:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라북도 전주시 덕진구 장동 1112 차단기 왼쪽 / 환경공단 충전기 옆</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12390</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5606</csId>
+                <csNm>전북개발공사</csNm>
+                <lat>33</lat>
+                <longi>124</longi>
+                <statUpdateDatetime>2023-06-15 15:42:48</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라북도 전주시 덕진구 중동 800 출입구 차단기 옆</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12389</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5605</csId>
+                <csNm>한국국토정보공사본사</csNm>
+                <lat>35.83788403</lat>
+                <longi>127.0657064</longi>
+                <statUpdateDatetime>2023-06-15 15:43:02</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라북도 임실군 강진면 백련리 551 국립임실호국원 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12392</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5601</csId>
+                <csNm>국립임실호국원</csNm>
+                <lat>35.551192699098166</lat>
+                <longi>127.18761888589684</longi>
+                <statUpdateDatetime>2023-06-15 15:41:38</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 해운대구 우동 1102-223 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12402</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5616</csId>
+                <csNm>(전주거치형)장산로주거지1</csNm>
+                <lat>35.17126026984353</lat>
+                <longi>129.14103814681513</longi>
+                <statUpdateDatetime>2023-06-15 15:44:28</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 영등포구 신길동 426-3 스포츠센터주차장입구(지상위치)</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12446</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5639</csId>
+                <csNm>영등포 제1스포츠센터</csNm>
+                <lat>37.500314</lat>
+                <longi>126.906495</longi>
+                <statUpdateDatetime>2023-06-15 15:40:54</statUpdateDatetime>
+            </item>
+        </items>
+        <numOfRows>100</numOfRows>
+        <pageNo>34</pageNo>
+        <totalCount>3399</totalCount>
+    </body>
+</response>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+    <header>
+        <resultCode>00</resultCode>
+        <resultMsg>NORMAL SERVICE.</resultMsg>
+    </header>
+    <body>
+        <items>
+            <item>
+                <addr>경상북도 영천시 고경면 청정리 700 국립영천호국원 입구 근처 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12395</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5609</csId>
+                <csNm>국립영천호국원</csNm>
+                <lat>35.97862122</lat>
+                <longi>129.10940639</longi>
+                <statUpdateDatetime>2023-06-15 15:40:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 영천시 대창면 대창리 1028 대창면문화센터 입구 근처 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12397</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>10</cpTp>
+                <csId>5610</csId>
+                <csNm>대창면문화센터</csNm>
+                <lat>35.87528566</lat>
+                <longi>128.89364139</longi>
+                <statUpdateDatetime>2023-06-15 15:41:03</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 중구 항동7가 58-70 연안동 행정복지센터 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12419</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5623</csId>
+                <csNm>연안동 행정복지센터</csNm>
+                <lat>37.45317598308719</lat>
+                <longi>126.60445380373768</longi>
+                <statUpdateDatetime>2023-06-15 15:40:28</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 부천시 도당동 185-148 고객주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>378</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>10</cpTp>
+                <csId>5648</csId>
+                <csNm>부천지사</csNm>
+                <lat>37.507352</lat>
+                <longi>126.786477</longi>
+                <statUpdateDatetime>2023-06-15 15:45:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 부천시 도당동 185-148 고객주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>7762</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>10</cpTp>
+                <csId>5648</csId>
+                <csNm>부천지사</csNm>
+                <lat>37.507352</lat>
+                <longi>126.786477</longi>
+                <statUpdateDatetime>2023-06-15 15:40:21</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>대구광역시 동구 효목동 626 사옥 앞편 주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12466</cpId>
+                <cpNm>완속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5644</csId>
+                <csNm>동대구지사</csNm>
+                <lat>35.874518751879556</lat>
+                <longi>128.64073646416347</longi>
+                <statUpdateDatetime>2023-06-15 15:42:44</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>대구광역시 동구 효목동 626 사옥 앞편 주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12465</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5644</csId>
+                <csNm>동대구지사</csNm>
+                <lat>35.874518751879556</lat>
+                <longi>128.64073646416347</longi>
+                <statUpdateDatetime>2023-06-15 15:45:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 강릉시 사천면 방동리 807-1 강원지방기상청</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12201</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5492</csId>
+                <csNm>강원지방기상청</csNm>
+                <lat>37.804075714693894</lat>
+                <longi>128.85395664916308</longi>
+                <statUpdateDatetime>2023-06-15 15:40:36</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 강릉시 구정면 제비리 888 구정휴게소(동해방향)</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12203</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5493</csId>
+                <csNm>(고속도로)구정휴게소 동해방향</csNm>
+                <lat>37.72263751062491</lat>
+                <longi>128.85162657076708</longi>
+                <statUpdateDatetime>2023-06-15 15:41:15</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 영양군 영양읍 감천리 1 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12198</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5465</csId>
+                <csNm>영양군 골프연습장 충전소</csNm>
+                <lat>36.6458325890778</lat>
+                <longi>129.10182141049341</longi>
+                <statUpdateDatetime>2023-06-15 15:40:37</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 강릉시 구정면 제비리 888 구정휴게소(동해방향)</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12205</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5493</csId>
+                <csNm>(고속도로)구정휴게소 동해방향</csNm>
+                <lat>37.72263751062491</lat>
+                <longi>128.85162657076708</longi>
+                <statUpdateDatetime>2023-06-15 15:45:02</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 삼척시 원덕읍 삼척로 734 (호산리) 한국남부발전 한마음 스포츠센터</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12209</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5496</csId>
+                <csNm>한국남부발전 복지관 급속 충전소</csNm>
+                <lat>37.1037</lat>
+                <longi>129.2023</longi>
+                <statUpdateDatetime>2023-06-15 15:41:35</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 횡성군 안흥면 안흥리 1063 찐빵마을 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12227</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5504</csId>
+                <csNm>안흥찐빵모락모락마을</csNm>
+                <lat>37.410166</lat>
+                <longi>128.155950</longi>
+                <statUpdateDatetime>2023-06-15 15:40:57</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 양주시 남면 상수리 667-10 검준일반산업단지 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12312</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5431</csId>
+                <csNm>검준일반산업단지</csNm>
+                <lat>37.8864719</lat>
+                <longi>126.995745</longi>
+                <statUpdateDatetime>2023-06-15 15:40:51</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>충청북도 청주시 흥덕구 송절동 838 고객주차장 입구</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12343</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5566</csId>
+                <csNm>강서2동 행정복지센터</csNm>
+                <lat>36.66609575163462</lat>
+                <longi>127.45372103309655</longi>
+                <statUpdateDatetime>2023-06-15 15:43:04</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 금정구 구서동 1032-6 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12399</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5612</csId>
+                <csNm>(전주거치형)구서동1</csNm>
+                <lat>35.25511133450156</lat>
+                <longi>129.0848044503765</longi>
+                <statUpdateDatetime>2023-06-09 19:40:59</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 금정구 구서동 1026-7 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12400</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5614</csId>
+                <csNm>(전주거치형)구서동2</csNm>
+                <lat>35.25672545118575</lat>
+                <longi>129.0845464236318</longi>
+                <statUpdateDatetime>2023-06-07 20:34:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 해운대구 우동 1102-223 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12401</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5615</csId>
+                <csNm>(전주거치형)장산로주거지2</csNm>
+                <lat>35.171392032690235</lat>
+                <longi>129.14123091541114</longi>
+                <statUpdateDatetime>2023-06-14 10:47:24</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 도봉구 도봉동 626-20 민원인 주차장 후문</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12418</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5625</csId>
+                <csNm>서울북부지검</csNm>
+                <lat>37.675807183286444</lat>
+                <longi>127.04649009657349</longi>
+                <statUpdateDatetime>2023-06-15 15:41:07</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 도봉구 도봉동 626-20 민원인 주차장 후문</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12415</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>3</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5625</csId>
+                <csNm>서울북부지검</csNm>
+                <lat>37.675807183286444</lat>
+                <longi>127.04649009657349</longi>
+                <statUpdateDatetime>2023-06-15 15:41:49</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 도봉구 도봉동 626-20 민원인 주차장 후문</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12417</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5625</csId>
+                <csNm>서울북부지검</csNm>
+                <lat>37.675807183286444</lat>
+                <longi>127.04649009657349</longi>
+                <statUpdateDatetime>2023-06-15 15:41:11</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 도봉구 도봉동 626-20 민원인 주차장 후문</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12416</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5625</csId>
+                <csNm>서울북부지검</csNm>
+                <lat>37.675807183286444</lat>
+                <longi>127.04649009657349</longi>
+                <statUpdateDatetime>2023-06-15 15:41:20</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>대전광역시 유성구 상대동 488 박물관 옥외 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12423</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>445</csId>
+                <csNm>대전시립박물관</csNm>
+                <lat>36.336701</lat>
+                <longi>127.335319</longi>
+                <statUpdateDatetime>2023-06-15 15:40:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 연수구 송도동 300-3 1층 지상주차장 24번 기둥</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12448</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5635</csId>
+                <csNm>국제여객터미널</csNm>
+                <lat>37.4236458</lat>
+                <longi>126.6052785</longi>
+                <statUpdateDatetime>2023-06-15 15:41:47</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 정선군 정선읍 봉양리 80-5 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12450</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>3</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5642</csId>
+                <csNm>정선군보건소</csNm>
+                <lat>37.37975633625133</lat>
+                <longi>128.67102711231425</longi>
+                <statUpdateDatetime>2023-06-15 15:41:12</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 계양구 장기동 130 주민센터 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12323</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>3</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5550</csId>
+                <csNm>계양1동행정복지센터</csNm>
+                <lat>37.57654994873408</lat>
+                <longi>126.73397064844451</longi>
+                <statUpdateDatetime>2023-06-15 15:43:17</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>제주특별자치도 서귀포시 상예동 2676 동쪽 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12378</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5585</csId>
+                <csNm>에코라운지</csNm>
+                <lat>33.26491166941601</lat>
+                <longi>126.38860663661911</longi>
+                <statUpdateDatetime>2023-06-15 15:41:47</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>제주특별자치도 서귀포시 상예동 2676 동쪽 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12377</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5585</csId>
+                <csNm>에코라운지</csNm>
+                <lat>33.26491166941601</lat>
+                <longi>126.38860663661911</longi>
+                <statUpdateDatetime>2023-06-15 15:41:42</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>제주특별자치도 서귀포시 상예동 2676 동쪽 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12375</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5585</csId>
+                <csNm>에코라운지</csNm>
+                <lat>33.26491166941601</lat>
+                <longi>126.38860663661911</longi>
+                <statUpdateDatetime>2023-06-15 15:45:01</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라북도 임실군 강진면 백련리 551 국립임실호국원 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12393</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5601</csId>
+                <csNm>국립임실호국원</csNm>
+                <lat>35.551192699098166</lat>
+                <longi>127.18761888589684</longi>
+                <statUpdateDatetime>2023-06-15 15:42:34</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 경산시 압량읍 당리리 471-1 입구</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12394</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5604</csId>
+                <csNm>당리 다목적광장 EVC</csNm>
+                <lat>35.8170000917399</lat>
+                <longi>128.79449556953997</longi>
+                <statUpdateDatetime>2023-06-15 15:42:56</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 금정구 남산동 91-10 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12398</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5611</csId>
+                <csNm>(전주거치형)남산동</csNm>
+                <lat>35.26733971346166</lat>
+                <longi>129.09224883559415</longi>
+                <statUpdateDatetime>2023-06-15 15:41:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 부산진구 전포동 190 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12406</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5619</csId>
+                <csNm>(전주거치형)전포동주거지</csNm>
+                <lat>35.1592446115555</lat>
+                <longi>129.07009742006508</longi>
+                <statUpdateDatetime>2023-06-15 15:40:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 해운대구 반여동 산 130-11 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12404</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5617</csId>
+                <csNm>(전주거치형)신선천주거지1</csNm>
+                <lat>35.20289539553814</lat>
+                <longi>129.13527015025562</longi>
+                <statUpdateDatetime>2023-06-06 12:31:51</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 부산진구 범천동 1090-12 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12409</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5622</csId>
+                <csNm>(전주거치형)범천동신암로2</csNm>
+                <lat>35.15439746911869</lat>
+                <longi>129.04843542838384</longi>
+                <statUpdateDatetime>2023-06-15 15:40:08</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 부산진구 범천동 1090-12 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12408</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5621</csId>
+                <csNm>(전주거치형)범천동신암로1</csNm>
+                <lat>35.15484232481926</lat>
+                <longi>129.04797475933</longi>
+                <statUpdateDatetime>2023-06-15 04:37:52</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 부산진구 범전동 68-21 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12405</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5618</csId>
+                <csNm>(전주거치형)시민공원옆주거지</csNm>
+                <lat>35.1694438733983</lat>
+                <longi>129.0621524938099</longi>
+                <statUpdateDatetime>2023-06-15 15:43:56</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라북도 익산시 팔봉동 850 지사 건물 옆 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>497</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>10</cpTp>
+                <csId>5691</csId>
+                <csNm>익산지사 02</csNm>
+                <lat>35.96160585915076</lat>
+                <longi>127.0047861942036</longi>
+                <statUpdateDatetime>2023-06-15 15:42:15</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 태백시 황지동 244-52 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12217</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5502</csId>
+                <csNm>태백국민체육센터</csNm>
+                <lat>37.1626942340464</lat>
+                <longi>128.985355554886</longi>
+                <statUpdateDatetime>2023-06-15 15:40:42</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 춘천시 동내면 사암리 산 121-1 부산방향 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12221</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5485</csId>
+                <csNm>(고속도로)춘천휴게소 부산방향</csNm>
+                <lat>37.81263676242214</lat>
+                <longi>127.76653960809253</longi>
+                <statUpdateDatetime>2023-06-15 15:42:17</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 춘천시 동내면 사암리 산 121-1 부산방향 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12218</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5485</csId>
+                <csNm>(고속도로)춘천휴게소 부산방향</csNm>
+                <lat>37.81263676242214</lat>
+                <longi>127.76653960809253</longi>
+                <statUpdateDatetime>2023-06-15 15:41:43</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 춘천시 동내면 사암리 산 121-1 부산방향 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12219</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5485</csId>
+                <csNm>(고속도로)춘천휴게소 부산방향</csNm>
+                <lat>37.81263676242214</lat>
+                <longi>127.76653960809253</longi>
+                <statUpdateDatetime>2023-06-15 15:43:23</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 춘천시 동내면 사암리 산 121-1 부산방향 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12220</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5485</csId>
+                <csNm>(고속도로)춘천휴게소 부산방향</csNm>
+                <lat>37.81263676242214</lat>
+                <longi>127.76653960809253</longi>
+                <statUpdateDatetime>2023-06-15 15:42:31</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>대구광역시 달서구 갈산동 971-5 후문</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12314</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5545</csId>
+                <csNm>한국산업인력공단</csNm>
+                <lat>35.836122</lat>
+                <longi>128.506474</longi>
+                <statUpdateDatetime>2023-06-15 15:45:03</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 노원구 공릉동 172 국제관,테크노큐브,프론티어관</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12346</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>3816</csId>
+                <csNm>서울과학기술대학교</csNm>
+                <lat>37.63300771189051</lat>
+                <longi>127.07754193602831</longi>
+                <statUpdateDatetime>2023-06-15 15:40:57</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 용인시 처인구 남사읍 완장리 952-4 지하주차장2층</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12411</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5597</csId>
+                <csNm>남사스포츠센터</csNm>
+                <lat>37.157378</lat>
+                <longi>127.173768</longi>
+                <statUpdateDatetime>2023-06-15 15:40:37</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 용인시 처인구 남사읍 완장리 952-4 지하주차장2층</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12410</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5597</csId>
+                <csNm>남사스포츠센터</csNm>
+                <lat>37.157378</lat>
+                <longi>127.173768</longi>
+                <statUpdateDatetime>2023-06-15 15:45:10</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 포항시 북구 용흥동 101-4 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12413</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5603</csId>
+                <csNm>동북지방통계청 포항사무소</csNm>
+                <lat>36.03482004021974</lat>
+                <longi>129.35669816799537</longi>
+                <statUpdateDatetime>2023-06-15 15:40:25</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 포항시 북구 용흥동 101-4 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12414</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5603</csId>
+                <csNm>동북지방통계청 포항사무소</csNm>
+                <lat>36.03482004021974</lat>
+                <longi>129.35669816799537</longi>
+                <statUpdateDatetime>2023-06-15 15:40:52</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 동해시 이로동 183-2 삼화동 행정복지센터</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12444</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5636</csId>
+                <csNm>삼화동 행정복지센터 전기차 충전소</csNm>
+                <lat>33</lat>
+                <longi>124</longi>
+                <statUpdateDatetime>2023-06-15 15:42:03</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 속초시 노학동 573-4 속초연수원 주차장 내</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12520</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>4300</csId>
+                <csNm>속초연수원</csNm>
+                <lat>38.19001262988523</lat>
+                <longi>128.5518064204755</longi>
+                <statUpdateDatetime>2023-06-15 15:40:54</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 횡성군 강림면 강림리 803-2 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12226</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5503</csId>
+                <csNm>강림 건강복지센터</csNm>
+                <lat>37.360728525398</lat>
+                <longi>128.128886769859</longi>
+                <statUpdateDatetime>2023-06-15 15:40:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라남도 순천시 대대동 162-2 순천만습지 주차장 출구방향</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12254</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5315</csId>
+                <csNm>순천만습지주차장</csNm>
+                <lat>34.88705139917769</lat>
+                <longi>127.50871940154806</longi>
+                <statUpdateDatetime>2023-06-15 14:41:05</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라남도 순천시 대대동 162-2 순천만습지 주차장 출구방향</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12255</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5315</csId>
+                <csNm>순천만습지주차장</csNm>
+                <lat>34.88705139917769</lat>
+                <longi>127.50871940154806</longi>
+                <statUpdateDatetime>2023-06-15 14:37:10</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 중구 운북동 465-37 영종역 2번출구 공영주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12273</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5423</csId>
+                <csNm>영종역 공영주차장</csNm>
+                <lat>37.510981</lat>
+                <longi>126.524317</longi>
+                <statUpdateDatetime>2023-06-15 15:41:08</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 부평구 청천동 113 청천천공영주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12342</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5162</csId>
+                <csNm>청천천공영주차장</csNm>
+                <lat>37.51672924803251</lat>
+                <longi>126.71506679706414</longi>
+                <statUpdateDatetime>2023-06-15 15:43:25</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 강서구 낙동북로 477 주차장입구옆</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12380</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>3808</csId>
+                <csNm>강서구청 주차장</csNm>
+                <lat>35.212533</lat>
+                <longi>128.980755</longi>
+                <statUpdateDatetime>2023-06-14 12:22:28</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 강서구 낙동북로 477 주차장입구옆</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12379</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>3808</csId>
+                <csNm>강서구청 주차장</csNm>
+                <lat>35.212533</lat>
+                <longi>128.980755</longi>
+                <statUpdateDatetime>2023-06-15 15:41:10</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>충청북도 충주시 목행동 426-4 지상 주차장 입구 좌측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12382</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>4</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5596</csId>
+                <csNm>충주시 농수산물도매시장</csNm>
+                <lat>37.005587807670714</lat>
+                <longi>127.92400834338554</longi>
+                <statUpdateDatetime>2023-06-15 08:30:15</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 남양주시 별내동 2190-2 정문 왼편</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12424</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5602</csId>
+                <csNm>수도권119특수구조대</csNm>
+                <lat>37.671133296452055</lat>
+                <longi>127.11077010995647</longi>
+                <statUpdateDatetime>2023-06-15 15:40:58</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 구리시 교문동 390-1 구리시청 2주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12426</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5568</csId>
+                <csNm>구리시청</csNm>
+                <lat>37.594727253586605</lat>
+                <longi>127.13080652389698</longi>
+                <statUpdateDatetime>2023-06-15 15:40:50</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 구리시 교문동 390-1 구리시청 2주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12425</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5568</csId>
+                <csNm>구리시청</csNm>
+                <lat>37.594727253586605</lat>
+                <longi>127.13080652389698</longi>
+                <statUpdateDatetime>2023-06-15 15:40:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 구리시 교문동 736-3 주차장 1층</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12427</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5569</csId>
+                <csNm>교문동주차빌딩</csNm>
+                <lat>37.596899917375055</lat>
+                <longi>127.13566249116782</longi>
+                <statUpdateDatetime>2023-06-15 15:40:52</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 구리시 교문동 736-3 주차장 1층</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12428</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5569</csId>
+                <csNm>교문동주차빌딩</csNm>
+                <lat>37.596899917375055</lat>
+                <longi>127.13566249116782</longi>
+                <statUpdateDatetime>2023-06-15 15:40:39</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라남도 광양시 중동 308-124 중앙하수처리장 정문 쪽 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12429</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5608</csId>
+                <csNm>중앙하수처리장</csNm>
+                <lat>34.929358420884554</lat>
+                <longi>127.6891769382542</longi>
+                <statUpdateDatetime>2023-06-15 15:40:44</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 춘천시 효자동 192-1 자연과학대학 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12430</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5628</csId>
+                <csNm>강원대학교</csNm>
+                <lat>37.87256836768867</lat>
+                <longi>127.74169026328086</longi>
+                <statUpdateDatetime>2023-06-15 15:44:13</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 강화군 불은면 삼성리 1027-42 진입로 초입 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12443</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5634</csId>
+                <csNm>농업기술센터</csNm>
+                <lat>37.703319</lat>
+                <longi>126.434468</longi>
+                <statUpdateDatetime>2023-06-15 15:40:54</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라남도 나주시 빛가람동 301 통신전파진흥원 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12463</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5646</csId>
+                <csNm>통신전파진흥원 전기차충전소</csNm>
+                <lat>35.01995538281936</lat>
+                <longi>126.79476216903949</longi>
+                <statUpdateDatetime>2023-06-15 15:40:41</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라남도 나주시 빛가람동 301 통신전파진흥원 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12462</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5646</csId>
+                <csNm>통신전파진흥원 전기차충전소</csNm>
+                <lat>35.01995538281936</lat>
+                <longi>126.79476216903949</longi>
+                <statUpdateDatetime>2023-06-15 15:40:37</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>울산광역시 중구 학성동 409-1 울산MBC 입구</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12514</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>10</cpTp>
+                <csId>5676</csId>
+                <csNm>울산MBC</csNm>
+                <lat>35.560804517904266</lat>
+                <longi>129.33258528517035</longi>
+                <statUpdateDatetime>2023-06-15 15:43:29</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 인제군 인제읍 상동리 289 인제전통시장 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12518</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5670</csId>
+                <csNm>인제전통시장</csNm>
+                <lat>38.067264862670335</lat>
+                <longi>128.1714725763827</longi>
+                <statUpdateDatetime>2023-06-15 15:40:01</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 연수구 동춘동 926 지하주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>11910</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5295</csId>
+                <csNm>홈플러스 인천연수점</csNm>
+                <lat>37.405906228017216</lat>
+                <longi>126.68361036155045</longi>
+                <statUpdateDatetime>2023-06-15 15:41:06</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 연수구 동춘동 926 지하주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>11911</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5295</csId>
+                <csNm>홈플러스 인천연수점</csNm>
+                <lat>37.405906228017216</lat>
+                <longi>126.68361036155045</longi>
+                <statUpdateDatetime>2023-06-15 15:41:04</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>인천광역시 연수구 동춘동 926 지하주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>11912</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5295</csId>
+                <csNm>홈플러스 인천연수점</csNm>
+                <lat>37.405906228017216</lat>
+                <longi>126.68361036155045</longi>
+                <statUpdateDatetime>2023-06-15 15:41:11</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 홍천군 화촌면 군업리 산 240-5 LPG충전소 우측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12222</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5488</csId>
+                <csNm>(고속도로)홍천휴게소 양양방향</csNm>
+                <lat>37.75727182855603</lat>
+                <longi>128.0042462601478</longi>
+                <statUpdateDatetime>2023-06-15 15:44:43</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 홍천군 화촌면 군업리 산 240-5 LPG충전소 우측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12223</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5488</csId>
+                <csNm>(고속도로)홍천휴게소 양양방향</csNm>
+                <lat>37.75727182855603</lat>
+                <longi>128.0042462601478</longi>
+                <statUpdateDatetime>2023-06-15 15:41:57</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 홍천군 화촌면 군업리 산 240-5 LPG충전소 우측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12225</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5488</csId>
+                <csNm>(고속도로)홍천휴게소 양양방향</csNm>
+                <lat>37.75727182855603</lat>
+                <longi>128.0042462601478</longi>
+                <statUpdateDatetime>2023-06-15 15:43:24</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 홍천군 화촌면 군업리 산 240-5 LPG충전소 우측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12224</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5488</csId>
+                <csNm>(고속도로)홍천휴게소 양양방향</csNm>
+                <lat>37.75727182855603</lat>
+                <longi>128.0042462601478</longi>
+                <statUpdateDatetime>2023-06-15 15:45:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 원주시 문막읍 원문로 1234 (동화리, 문막하행휴게소) 지상주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12232</cpId>
+                <cpNm>급속03</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5506</csId>
+                <csNm>(고속도로)문막휴게소 강릉방향</csNm>
+                <lat>37.33457627822361</lat>
+                <longi>127.85764772960239</longi>
+                <statUpdateDatetime>2023-06-15 15:41:20</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 원주시 호저면 마근거리길 110 (옥산리, 원주(춘천방향)휴게소) 지상주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12235</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5507</csId>
+                <csNm>(고속도로)원주휴게소 춘천방향</csNm>
+                <lat>37.433970757612045</lat>
+                <longi>127.9316159949919</longi>
+                <statUpdateDatetime>2023-06-15 15:43:52</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 영월군 영월읍 하송리 373-1 공용주차장 위치</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12236</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5490</csId>
+                <csNm>영월군공용주차장</csNm>
+                <lat>37.17886552933195</lat>
+                <longi>128.45855513971503</longi>
+                <statUpdateDatetime>2023-06-15 15:40:34</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 원주시 문막읍 원문로 1234 (동화리, 문막하행휴게소) 지상주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12230</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5506</csId>
+                <csNm>(고속도로)문막휴게소 강릉방향</csNm>
+                <lat>37.33457627822361</lat>
+                <longi>127.85764772960239</longi>
+                <statUpdateDatetime>2023-06-15 15:42:03</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 원주시 문막읍 원문로 1234 (동화리, 문막하행휴게소) 지상주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12231</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5506</csId>
+                <csNm>(고속도로)문막휴게소 강릉방향</csNm>
+                <lat>37.33457627822361</lat>
+                <longi>127.85764772960239</longi>
+                <statUpdateDatetime>2023-06-15 15:40:48</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 원주시 문막읍 원문로 1234 (동화리, 문막하행휴게소) 지상주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12234</cpId>
+                <cpNm>급속04</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5506</csId>
+                <csNm>(고속도로)문막휴게소 강릉방향</csNm>
+                <lat>37.33457627822361</lat>
+                <longi>127.85764772960239</longi>
+                <statUpdateDatetime>2023-06-15 15:41:09</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>강원도 영월군 영월읍 하송리 242 군청 보건소 뒤</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12233</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5489</csId>
+                <csNm>영월군청 전기차충전소</csNm>
+                <lat>37.184008</lat>
+                <longi>128.461842</longi>
+                <statUpdateDatetime>2023-06-15 15:40:54</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 광주시 곤지암읍 곤지암리 453-3 곤지암 배수펌프장 공영주차장 안</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12309</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5523</csId>
+                <csNm>곤지암 배수펌프장 공영주차장 충전소</csNm>
+                <lat>37.35072730585719</lat>
+                <longi>127.33771511316807</longi>
+                <statUpdateDatetime>2023-06-15 15:45:01</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경기도 남양주시 별내동 2190-2 정문 왼편</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12388</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5602</csId>
+                <csNm>수도권119특수구조대</csNm>
+                <lat>37.671133296452055</lat>
+                <longi>127.11077010995647</longi>
+                <statUpdateDatetime>2023-06-15 15:42:35</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>충청북도 보은군 내북면 창리 63-1 정문 오른쪽</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12437</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5630</csId>
+                <csNm>내북면사무소</csNm>
+                <lat>36.57801028883558</lat>
+                <longi>127.66373296025804</longi>
+                <statUpdateDatetime>2023-06-15 15:42:12</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 안동시 동부동 85-3 공영주차장 1층</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12441</cpId>
+                <cpNm>급속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5627</csId>
+                <csNm>웅부공원 공영주차장</csNm>
+                <lat>36.565614</lat>
+                <longi>128.732862</longi>
+                <statUpdateDatetime>2023-06-15 15:40:52</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 영덕군 영덕읍 우곡리 286 사옥내 주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12455</cpId>
+                <cpNm>완속02</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>3</cpTp>
+                <csId>5643</csId>
+                <csNm>영덕지사(공용)</csNm>
+                <lat>36.41145</lat>
+                <longi>129.375104</longi>
+                <statUpdateDatetime>2023-06-15 15:44:20</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>경상북도 영덕군 영덕읍 우곡리 286 사옥내 주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12454</cpId>
+                <cpNm>완속01</cpNm>
+                <cpStat>2</cpStat>
+                <cpTp>3</cpTp>
+                <csId>5643</csId>
+                <csNm>영덕지사(공용)</csNm>
+                <lat>36.41145</lat>
+                <longi>129.375104</longi>
+                <statUpdateDatetime>2023-06-15 15:45:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 해운대구 좌동 1427 주차장내</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12303</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5539</csId>
+                <csNm>아세안문화원</csNm>
+                <lat>35.17521352534455</lat>
+                <longi>129.1819528416682</longi>
+                <statUpdateDatetime>2023-06-15 15:40:59</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 중랑구 신내동 316 장례식장 뒷편 전기차충전소</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12334</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5563</csId>
+                <csNm>서울의료원</csNm>
+                <lat>37.6128812</lat>
+                <longi>127.0994340</longi>
+                <statUpdateDatetime>2023-06-15 15:41:00</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>충청북도 충주시 봉방동 21-38 지상주차장 입구 우측</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12381</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5595</csId>
+                <csNm>근로복지공단 충주지사</csNm>
+                <lat>36.9729951151103</lat>
+                <longi>127.92190437416704</longi>
+                <statUpdateDatetime>2023-06-15 15:42:55</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라북도 전주시 덕진구 장동 1112 차단기 왼쪽 / 환경공단 충전기 옆</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12390</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5606</csId>
+                <csNm>전북개발공사</csNm>
+                <lat>33</lat>
+                <longi>124</longi>
+                <statUpdateDatetime>2023-06-15 15:42:48</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라북도 전주시 덕진구 중동 800 출입구 차단기 옆</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12389</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5605</csId>
+                <csNm>한국국토정보공사본사</csNm>
+                <lat>35.83788403</lat>
+                <longi>127.0657064</longi>
+                <statUpdateDatetime>2023-06-15 15:43:02</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>전라북도 임실군 강진면 백련리 551 국립임실호국원 주차장</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12392</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5601</csId>
+                <csNm>국립임실호국원</csNm>
+                <lat>35.551192699098166</lat>
+                <longi>127.18761888589684</longi>
+                <statUpdateDatetime>2023-06-15 15:41:38</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>부산광역시 해운대구 우동 1102-223 노상주차장</addr>
+                <chargeTp>1</chargeTp>
+                <cpId>12402</cpId>
+                <cpNm>완속01</cpNm>               <cpStat>1</cpStat>
+                <cpTp>2</cpTp>
+                <csId>5616</csId>
+                <csNm>(전주거치형)장산로주거지1</csNm>
+                <lat>35.17126026984353</lat>
+                <longi>129.14103814681513</longi>
+                <statUpdateDatetime>2023-06-15 15:44:28</statUpdateDatetime>
+            </item>
+            <item>
+                <addr>서울특별시 영등포구 신길동 426-3 스포츠센터주차장입구(지상위치)</addr>
+                <chargeTp>2</chargeTp>
+                <cpId>12446</cpId>
+                <cpNm>급속01</cpNm>
+                <cpStat>1</cpStat>
+                <cpTp>7</cpTp>
+                <csId>5639</csId>
+                <csNm>영등포 제1스포츠센터</csNm>
+                <lat>37.500314</lat>
+                <longi>126.906495</longi>
+                <statUpdateDatetime>2023-06-15 15:40:54</statUpdateDatetime>
+            </item>
+        </items>
+        <numOfRows>100</numOfRows>
+        <pageNo>34</pageNo>
+        <totalCount>3399</totalCount>
+    </body>
+</response>
