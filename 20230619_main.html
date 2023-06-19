@@ -10,7 +10,22 @@
         <div><img src="./resources/images/top_logo.jpg"></div>
         <div>
             <form action="./20230619_search_do.html" method="get">
-                <input type="text" name="word" value="강제값">
+                <input type="color" name="mycolor"> <!-- mycolor=%23a69526 -->
+                <input type="date" name="mydate"> <!-- mydate=2023-06-21 -->
+                <input type="time" name="mytime"> <!-- 오전8시52분 mytime=08%3A52 -->
+                <fieldset>
+                    <legend>it관련</legend>
+                    <input checked="checked" type="checkbox" name="it" value="java" id="javaid"><label for="javaid">Java</label>
+                    <input checked="false" type="checkbox" name="it" value="c#" id="csharp"><label for="csharp">C#</label>
+                    <input checked="" type="checkbox" name="it" value="sql" id="sqlid"><label for="sqlid">SQL</label>
+                </fieldset>
+                <fieldset>
+                    <legend>수험서</legend>
+                    <input checked type="checkbox" name="sub" value="info"><label >정보처리기사</label>
+                    <input type="checkbox" name="sub" value="sqld"><label >SQLD</label>
+                    <input type="checkbox" name="sub" value="security"><label >정보보안기사</label>
+                </fieldset>
+                <input type="text" name="word" value="" readonly="readonly">
                 <button type="submit">텍스트와<img src="./resources/images/a.svg" width="20">이미지가능</button>
                 <input type="submit" value="텍스트만작성가능" >
                 <input type="button" value="type button은 js에서 사용될 예정">
@@ -22,7 +37,7 @@
     <div id="wrap_content">
         <section>
             <form action="a.html" method="post">
-                <input type="file" name="uploadfile">
+                <input multiple type="file" name="uploadfile">
                 <button type="submit">파일 전달</button>
             </form>
             <hr>
@@ -35,8 +50,8 @@
                 <table>
                     <tbody>
                         <tr>
-                            <th><label >id</label></th>
-                            <td><input type="text" name="idd"></td>
+                            <th><label for="idid" >id</label></th>
+                            <td><input type="text" name="idd" maxlength="10" id="idid"></td>
                             <td rowspan="2"><button type="submit">로그인</button></td>
                         </tr>
                         <tr>
@@ -52,7 +67,7 @@
     </div>
     <footer>
         <input type="button" value="button은 form과 무관하게 js연동">
-        copyright KH.or.kr
+         copyright KH.or.kr
     </footer>
 </body>
 </html>
