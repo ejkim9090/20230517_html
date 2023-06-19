@@ -11,14 +11,85 @@
     </style>
 </head>
 <body>
-    <h7>말도안되는 태그 사용</h7>
+    <h4>form태그자체는 gui적인 특징 없음.이동할페이지에 전달하고자하는데이터의 묶음을 처리함.<br>자식태그로 input 또는 select 같은 태그들이 존재해야 의미가 있음.</h4>
+    <form action="">
+        <input type="text">
+        <input type="text">
+    </form>
+    <form>
+        <input type="text">
+        <input type="text">
+    </form>
     <hr>
-    <img  height="100"  src="./resources/images/17419544428574.png" alt="이미지파일이손상되거나경로가맞지 않을때 나타내는 문구"/>닫히는 태그 없는 태그
-    <hr>
-    <img  height="100" width="200" src="./resources/images/top_logo.jpg"/>닫히는 태그 없는 태그
-    <hr>
-    <img width="200" height="100" src="./resources/images/a.svg"/> svg는 가로세로 비율 유지하도록 coding 되어있으면 유지됨.
-    <hr>
-    <img width="200" src="./resources/images/a.svg"/>닫히는 태그 없는 태그
+
+    <header>
+        주로 log title 상단메뉴
+        <nav>상단메뉴 또는 사이드 메뉴</nav>
+    </header>
+    <div id="wrap_content">
+        <nav>상단메뉴 또는 사이드 메뉴</nav>
+        <section>
+            <article>
+                주요상품목록
+            </article>
+            <article>
+                테마별상품목록
+            </article>
+        </section>
+        <aside>사이드배너광고 또는 바로가기링크</aside>
+    </div>
+    <footer>
+        <nav>상단메뉴 또는 사이드 메뉴</nav>
+        연락처, copyright, 저작권
+    </footer>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XMipmINnMwI" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+    </div>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XMipmINnMwI" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+    </div>
+    <div><iframe src="a.html" width="500" height="500">ifram innertext는 보여지지 않음.</iframe></div>
+    <div>모든 태그에 id 속성 지정 가능함. 
+        id 속성값은 페이지내 unique한 값이 들어가야함. </div>
+    <span id="p2">h7말도안되는 태그 사용</span>
+    <img id="p2" width="200" src="./resources/images/ryan.svg"/>
+    닫히는 태그 없는 태그
+    <h4>단락 제목</h4>
+    <p>한 단락을 담음. <br>내용을 담는 패러그래프</p>
+    <img id="p3"  height="100"  src="./resources/images/17419544428574.png" alt="이미지파일이손상되거나경로가맞지 않을때 나타내는 문구"/>
+    닫히는 태그 없는 태그
+    <img id="p4" height="100" width="200" src="./resources/images/top_logo.jpg"/>
+    닫히는 태그 없는 태그
+    <img width="200" height="100" src="./resources/images/a.svg"/> 
+    svg는 가로세로 비율 유지하도록 coding 되어있으면 유지됨.
+    <img width="200" src="./resources/images/a.svg"/>
+    닫히는 태그 없는 태그
+    <a href="./a.html" target="_blank">InnerText</a>
+    <a href="./b.html"><img src="./resources/images/a.svg" width="50" alt="InnerHTML"></a>
+    <a href="#p2"> 페이지내부p2 이동_InnerText또는InnerHTML</a>
+    <a href="#p3">
+        <h1>
+            <img src="./resources/images/a.svg" width="50" alt="InnerHTML"><img src="./resources/images/a.svg" width="50" alt="InnerHTML">
+            이렇게 사용금지! 페이지내부p3 이동_InnerText또는InnerHTML
+        </h1>
+    </a>
+    <a href="#p3">
+        <img src="./resources/images/a.svg" width="50" alt="InnerHTML"><img src="./resources/images/a.svg" width="50" alt="InnerHTML">
+        <h1>
+            페이지내부p3 이동_InnerText또는InnerHTML
+        </h1>
+    </a>
+    <a href="#p3">
+        <h1>
+            <img src="./resources/images/a.svg" width="50" alt="InnerHTML"><img src="./resources/images/a.svg" width="50" alt="InnerHTML">
+            <span>페이지내부p3 이동_InnerText또는InnerHTML</span>
+        </h1>
+    </a>
 </body>
 </html>

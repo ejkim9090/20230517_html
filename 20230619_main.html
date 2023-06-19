@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+</head>
+<body>
+    <header>
+        <div><img src="./resources/images/top_logo.jpg"></div>
+        <div>
+            <form action="./20230619_search_do.html" method="get">
+                <input type="text" name="word" value="강제값">
+                <button type="submit">텍스트와<img src="./resources/images/a.svg" width="20">이미지가능</button>
+                <input type="submit" value="텍스트만작성가능" >
+                <input type="button" value="type button은 js에서 사용될 예정">
+                <input type="reset" value="form태그내부사용자입력창들에초기값">
+            </form>
+        </div>
+        <hr>
+    </header>
+    <div id="wrap_content">
+        <section>
+            <form action="a.html" method="post">
+                <input type="file" name="uploadfile">
+                <button type="submit">파일 전달</button>
+            </form>
+            <hr>
+        </section>
+        <aside>
+            http://127.0.0.1:5500/20230619_login_check_do.html?hidd=hvalue&idd=aa&pwd=bb
+            http://127.0.0.1:5500/20230619_login_check_do.html?hidd=hvalue&idd=&pwd=
+            <form action="./20230619_login_check_do.html" method="post">
+                <input type="hidden" name="hidd" value="hvalue">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><label >id</label></th>
+                            <td><input type="text" name="idd"></td>
+                            <td rowspan="2"><button type="submit">로그인</button></td>
+                        </tr>
+                        <tr>
+                            <th><label >password</label></th>
+                            <td><input type="password" name="pwd"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="reset" value="form태그내부사용자입력창들에초기값">
+            </form>
+        </aside>
+        <hr>
+    </div>
+    <footer>
+        <input type="button" value="button은 form과 무관하게 js연동">
+        copyright KH.or.kr
+    </footer>
+</body>
+</html>
