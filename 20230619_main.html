@@ -4,15 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인페이지</title>
+    <link href="./resources/css/reset.css" rel="stylesheet">
+    <style>
+
+        /* style태그 내부는 style 문법에 따라 html문법이 아님. 주석 마크도 달라짐. <!-- 주석 아님--> */
+        button {
+            background-color: blue;
+        }
+        button[type=button]{
+            background-color: aquamarine;
+        }
+        /* 
+        *{
+            background-color: azure;
+        } 
+        */
+        #id_1{
+            background-color: bisque;
+            border: 3px solid brown;
+        }
+        .c_red{
+            color: red;
+        }
+
+        [class~=m] {
+            color: blueviolet;
+        }
+
+        div > form{
+            background-color: yellowgreen;
+        }
+        [data-abc],[selected]{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div data-abc="테스트용">data abc 테스트용</div>
+        <div><p style="color: blueviolet;background-color: yellowgreen;">로렘 입숨로렘 입숨로렘 입숨로렘 입숨</p></div>
+        <div class="c-yellow">로렘 입숨로렘 입숨로렘 입숨로렘 입숨</div>
+        <div class="s-m">로렘 입숨로렘 입숨로렘 입숨로렘 입숨</div>
+        <div class="s-l">로렘 입숨로렘 입숨로렘 입숨로렘 입숨</div>
+        <button type="button">여긴 무슨색?</button>
         <div><img src="./resources/images/top_logo.jpg"></div>
-        <div>
+        <div id="id_1" class="c-red">
             <form action="./20230619_search_do.html" method="get">
+                <meter value="5" max="10" ></meter>
+                <progress value="4" max="10" name="progress">프로그레스는 사용자입력은 아니나 date전달목적</progress>
+                <!-- ?optprice=1200 -->
+                <input type="text" list="datalist_id_3" name="optprice">
+                <datalist id="datalist_id_3">
+                    <option value="1000" label="XS추가요금"></option>
+                    <option value="1200">S</option>
+                    <option value="1500" >M</option>
+                </datalist>
+                <select name="size" >
+                    <optgroup label="US-Size">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m" >M</option>
+                    </optgroup>
+                    <optgroup label="EU-Size">
+                        <option value="97">97</option>
+                        <option value="98">98</option>
+                        <option value="99" selected>99</option>
+                    </optgroup>
+                </select>
+                <input type="email" name="email" required>
+                <input type="url" name="url" value="http://"  required >
+                <input type="search" name="search">
+                <input type="number" value="5" name="num">
+                <input type="range" value="5" max="10" name="range">
                 <input type="color" name="mycolor"> <!-- mycolor=%23a69526 -->
-                <input type="date" name="mydate"> <!-- mydate=2023-06-21 -->
-                <input type="time" name="mytime"> <!-- 오전8시52분 mytime=08%3A52 -->
+                <input type="date" name="mydate" class="c_red" min="2023-01-01" max="2023-07-20"> <!-- mydate=2023-06-21 -->
+                <input type="time" name="mytime" class="c_red"> <!-- 오전8시52분 mytime=08%3A52 -->
                 <fieldset>
                     <legend>it관련</legend>
                     <input checked="checked" type="checkbox" name="it" value="java" id="javaid"><label for="javaid">Java</label>

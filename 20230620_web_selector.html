@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <link href="./resources/css/reset.css" rel="stylesheet">
+    <style>
+        /* CSS문법
+        첫번째 p태그에 background yellow, 글자색은 green
+        { background: yellow; color: green; }
+        두번째 p태그에 background red, 글자색은 blue
+        { background: red; color: yellow; }
+        세번째 p태그에 background gray, 글자색은 red
+        { background: gray; color: black; }
+        
+        #id1{ background: yellow; color: green; }
+        #id2{ background: red; color: yellow; }
+        #id3{ background: gray; color: black; }
+
+        p#id1{ background: yellow; color: green; }
+        p#id2{ background: red; color: yellow; }
+        p#id3{ background: gray; color: black; }
+        
+        p[id=id1]{ background: yellow; color: green; }
+        p[id=id1]{ background: red; color: yellow; }
+        p[id=id1]{ background: gray; color: black; }
+        
+        p:nth-child(1){ background: yellow; color: green; }
+        p:nth-child(2){ background: red; color: yellow; }
+        p:nth-child(3){ background: gray; color: black; }
+        
+        p:first-of-type{ background: yellow; color: green; }
+        p:nth-of-type(2){ background: red; color: yellow; }
+        p:last-of-type { background: gray; color: black; }
+        
+        p:first-child{ background: yellow; color: green; }
+        p:nth-child(2){ background: red; color: yellow; }
+        p:last-child { background: gray; color: black; }
+        
+        div #id1{ background: yellow; color: green; }
+        div #id2{ background: red; color: yellow; }
+        div #id3{ background: gray; color: black; }
+
+        .ca.cc { background: yellow; color: green; }
+        .ca.cb.cc { background: red; color: yellow; }
+        .cb { background: gray; color: black; }
+        .ca{
+            background: yellow; 
+        }
+        .cb{
+            color: green; 
+        }
+        .cc{
+            font-size: 1.2em;
+        }
+
+        div .ca.cc { background: yellow; color: green; }
+        div .ca.cb.cc { background: red; color: yellow; }
+        div .cb { background: gray; color: black; }
+        */
+
+        p.ca.cc { background: yellow; color: green; }
+        p.ca.cb.cc { background: red; color: yellow; }
+        p.cb { background: gray; color: black; }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas ad deserunt veritatis cumque in nam accusamus atque ipsa delectus corrupti doloribus quisquam tenetur perferendis facilis debitis blanditiis, expedita sapiente?</p>
+        <p id="id1" class="ca cc">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <a>여기 끼워넣기</a>
+        <p id="id2" class="ca cb cc">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <a>여기 끼워넣기</a>
+        <p id="id3" class="cb ">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+</body>
+</html>
