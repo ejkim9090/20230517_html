@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/resources/css/reset.css" rel="stylesheet">
+    <style>
+        div {
+            background: #eee;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        #id2{
+            /* 
+            fixed는 화면 고정위치 배치
+            top.bottom.left.right 함께 사용되어야 함.
+            width/height 지정도 함께 해야함.
+            */
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 100px;
+            z-index: 999;
+        }
+        body{
+            position: relative;
+        }
+        #id3 {
+            position: relative;
+            /* 
+            relative 기능
+            1. absolute의 기준
+            나의 자식/후손 중에 absolute가 있다면
+            absolute인 요소의 높이만큼을 height로 지정해 줘야함.
+            absolute는 그래서 주로 logo, img등 고정크기가 있는 요소들로 지정됨.
+            p 태그에는 쓰지 않음!
+            */
+            height: 500px;
+        }
+        #id3 > p:first-child{
+            /* 
+            absolute는 자유롭게 배치
+            top.bottom.left.right 함께 사용되어야 함.
+            width/height 지정도 함께 해야함.
+            조상 중에 position:relative; 이 존재해야함.
+            */
+            position: absolute;
+            top:10px;
+            left: 20px;
+            width: 100px;
+            background: antiquewhite;
+        }
+        #id3 > p:nth-child(2) {
+            position: absolute;
+            top:30px;
+            left: 150px;
+            width: 100px;
+            background-color: azure;
+        }
+        #id3 > p:last-child {
+            position: absolute;
+            top:5px;
+            right: 20px;
+            width: 100px;
+            background-color: beige;
+        }
+        #id5{
+            position: relative;
+            /* 
+            relative 기능
+            2.  흐름상 자연스럽게 top.bottom.left.right만큼 위치할 수 있음.
+            width/height 함께 작성되어야 함.
+            */
+            top:10px;
+            left: 20px;
+            width: 80%;
+        }
+        #id8 {
+            overflow: hidden;
+            /* 
+            overflow: hidden;의 추가적인 기능
+            나의 자식요소들의 크기를 계산해냄
+            자식 요소 중 float 지정한 것이 있으면 나의 크기(height)계산을 하지 않게 되는데
+            그때 강제로 자식 요소(float인 것들까지) 크기를 계산하게 하는 기능
+            */
+        }
+        #id8 p{
+            /* 
+            float 배치 설정한다면 
+            반드시
+            부모태그에
+            overflow:hidden; 
+            추가
+            */
+            width: 200px;
+            border: 1px solid blue;
+            float: left;
+        }
+        #id9 {
+            /* 
+            위 id8에서 잘못 구현된 경우 그 영향이 id9에게 끼칠 수 있으므로 
+            방지차원에서 clear:both; 추가함.
+            꼭필요하진 않음. id8을 정상적으로 구현했다면 불필요함.
+            */
+            clear: both;
+            overflow: hidden;
+        }
+        #id9 p:nth-child(1) {
+            /*
+            float: left;는 지정한 width 외 나머지 공간을 
+            다른 요소들에게 허락함.
+            따라서 다음에 이어서 나오는 
+            block 요소인 p태그들이 그 공간에 작성됨.
+            */
+            float: left;
+            width: 200px;
+            border: 1px solid blue;
+        }
+        #id9 p:nth-child(2) {
+            /*
+            이전 형제관계의 요소에서 작성된 float를 해제함.
+            */
+            clear:both
+        }
+        nav > ul  li{
+            display: inline-block;
+            /* padding: 10px 10px; */
+        }
+        nav > ul  li:first-of-type{
+            padding-left:  50px;
+        }
+        nav > ul  li:last-of-type{
+            padding-right:  50px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: red;
+            color: azure;
+        }
+        a:link{
+            color: violet;
+        }
+        a:visited{
+            color: yellowgreen;
+        }
+        a:active{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#a">메뉴1</a></li>
+            <li>|</li>
+            <li>메뉴2</li>
+            <li>|</li>
+            <li>메뉴3</li>
+        </ul>
+    </nav>
+    <div id="id1">
+        <p>id1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+        <p>id5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+    </div>
+    <div id="id2">
+        <p>id2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+    </div>
+    <div id="id3">
+        <p>id3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+        <p>id1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+        <p>id5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+       </div>
+    <div id="id4">
+        <p>id4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+    </div>
+    <div id="id5">
+        <p>id5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+    </div>
+    <div id="id6">
+        <p>id6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+    </div>
+    <div id="id7">
+        <p>id7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+    </div>
+    <div id="id8">
+        <p>id8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+        <p>id8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+        <p>id8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+        <p>id5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+    </div>
+    <div id="id9">
+        <p>id9 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+        <p>id9 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+        <p>id9 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+        <p>id9 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error ipsum
+            blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit dignissimos
+            neque exercitationem?</p>
+    </div>
+</body>
+
+</html>

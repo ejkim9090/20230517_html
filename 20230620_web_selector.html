@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>선택자</title>
+    <!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet"> 
+    -->
     <link href="./resources/css/reset.css" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'Ostrich';
+            src: 
+                local('Ostrich Sans')
+                ,
+                url('resources/fonts/ostrich-sans-bold.svg') format('svg')
+                ,
+                url('resources/fonts/ostrich-sans-bold.ttf') format('truetype')
+                ,
+                url('resources/fonts/ostrich-sans-bold.woff') format('woff')
+                ;
+        }
+        div{
+            /*             
+            font-family: 'Ostrich', 'Orbit', '함초롱바탕' , 'Courier New', Courier, monospace;
+            font-size: 28pt;
+            font-weight: 400;
+            font-style: oblique; 
+            font-variant: small-caps;
+            */
+            font : 800 2em 'Orbit','Ostrich', '함초롱바탕','Courier New', Courier, monospace ;
+            line-height: 50px;
+        }
+
+
         /* CSS문법
         첫번째 p태그에 background yellow, 글자색은 green
         { background: yellow; color: green; }
@@ -59,17 +89,48 @@
         div .ca.cb.cc { background: red; color: yellow; }
         div .cb { background: gray; color: black; }
         */
-
-        p.ca.cc { background: yellow; color: green; }
-        p.ca.cb.cc { background: red; color: yellow; }
-        p.cb { background: gray; color: black; }
+        p.ca.cc {
+/*
+            border-width: 5px 10px 5px 2px;
+            border-color: black red blue greenyellow;
+            border-style: solid dashed dotted solid; 
+*/
+            /*
+            border-width: 5px 10px;
+            border-color: blue greenyellow;
+            border-style: solid dashed; 
+            */
+            border-width: 5px 10px 2px;
+            border-color: red blue greenyellow;
+            border-style: solid dashed dotted; 
+            border-radius: 50px 80px 50px 10px;
+            box-shadow: #f00 0 0 10px, #ccc 0 0 10px inset;
+/*
+            border-top: 5px dashed black;
+            border-right: 10px dotted blue;
+            border-bottom: 5px solid black;
+            border-left: 1px solid red;
+*/
+            /* display: inline-block; */
+            width: 400px;
+            padding: 20px 50px;
+            margin: 20px;
+            background-color: rgba(250, 250, 00, .3); color: green;
+         }
+        p.ca.cb.cc { background: hsl(360, 70%, 80%); color: yellow;}
+        p.cb { background:#ffffff; color: rgb(143, 139, 11); }
     </style>
 </head>
 <body>
     <div>
+        <pre>
+            여기
+            그대로
+                표현
+        </pre>
+        <a>여기 끼워넣기</a>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas ad deserunt veritatis cumque in nam accusamus atque ipsa delectus corrupti doloribus quisquam tenetur perferendis facilis debitis blanditiis, expedita sapiente?</p>
         <p id="id1" class="ca cc">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <a>여기 끼워넣기</a>
         <p id="id2" class="ca cb cc">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         <a>여기 끼워넣기</a>
         <p id="id3" class="cb ">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
