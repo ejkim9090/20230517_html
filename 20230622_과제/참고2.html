@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI디자인_5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        /* 0. 화면에서 사용되는 공통 (색상, 폰트, ul, table 등의 style 지정) reset.css */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        /* 1. body 자식 layout */
+        /* 2. header 자식 layout */
+        header > div.logo {
+            float: left;
+        }
+        header > div.login {
+            float: right;
+        }
+        /* float 사용시 부모 태그에 overflow로 계산함 */
+        header{
+            overflow: hidden;
+        }
+        /* 2. nav 자식 layout */
+        nav li {
+            float: left;
+            width: 15%;
+        }
+        /* float 사용시 부모 태그에 overflow로 계산함 */
+        nav > ul{
+            overflow: hidden;
+        }
+        nav li:first-of-type{
+            margin-left: 5%;
+        }
+        /* 2. section 자식 layout */
+        section{
+            height: 500px;
+        }
+        /* 5. footer 자식 layout */
+        footer{
+            height: 50px;
+        }
+
+        /* 3. nav 자식 detail */
+        nav a {
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        /* 3. section 자식 detail */
+        section{
+            background-color: #999;
+        }
+        /* 3. footer 자식 detail */
+        footer{
+            background-color: #ccc;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+    <header>
+        <div class="logo">
+            <img src="#" width="100" height="100">
+        </div>
+        <div class="login">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>패스워드</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit"><input type="reset"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">메인</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자유게시판</a></li>
+            <li><a href="#">갤러리</a></li>
+            <li><a href="#">회원관리</a></li>
+            <li><a href="#">채팅하기</a></li>
+        </ul>
+    </nav>
+    <section>
+        section
+    </section>
+    <footer>
+        <marquee scrolldelay="2" loop="2" >Copyright &#8448; &copy;   1998-2019 KH Information Educational Institute All Right Reserved</marquee>
+    </footer>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/resources/images/17419544428574.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/resources/images/17419544428574.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/resources/images/17419544428574.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
