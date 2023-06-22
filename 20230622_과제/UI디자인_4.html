@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI디자인_4</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>납품자정보</legend>
+            <ol type="1">
+            <li>납품자명: <input type="text" id="name" required placeholder="name"></li>
+            <li>email: <input type="text" id="email" required placeholder="answs@naver.com"></li>
+            <li>홈페이지: <input type="text" id="url" required placeholder="http://""></li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>납품정보</legend>
+            <ul>
+            <li>상품명:
+                <input type="text" list="list">
+                <datalist id="list">
+                    <option value=dog1004>도그1004 </option>
+                    <option value=catchicken>고양이치킨</option>
+                    <option value=milk>우유</option>
+                </datalist>
+            </li>
+            <li>납품수량: <input type="number" min="10" max="100" step="10" required placeholder="최소10이상"></li>
+            <li>납품등급: <input type="range" value="0" max="10" step="2"></li>
+            </ul>
+        </fieldset>
+        <button type="submit">전송</button>
+
+    </form>
+</body>
+</html>
