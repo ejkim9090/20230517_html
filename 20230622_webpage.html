@@ -14,11 +14,18 @@
 <!-- [4] 폰트크기 5~7개정도 class 미리 만들어두기 -->
 <!-- [4] button 3개 class 미리 만들어두기 -->
 <!-- [4] a 모양 미리 만들어두기 -->
-<!-- [5] Layout 영역 -->
+
+<!-- [5] body Layout 영역 -->
 <style>
     .wrap{
         border: 1px solid black;
-        box-sizing: border-box;
+        /* 
+        영역 4가지 
+        content영역
+        padding
+        border
+        margin
+        */
     }
     .wrap.header{
         background: bisque;
@@ -30,36 +37,153 @@
         background: bisque;
     }
     header, #content, footer{
+        box-sizing: border-box;
+        
         /* 중앙정렬 */
-        width: 80vw; margin: 0 auto;
+        width: 600px; margin: 0 auto;
+       
+
         border: 1px solid black;
     }
     #content{
+         /* 2. float 배치- 한것으로 height 계산 못하므로 overflow hidden 설정 */
         overflow: hidden;
     }
     /* section */
     section{
-        width: 80%; float: left;
+        /* 2. float 배치 */
+        width: 394px; float: left;
     }
     /* aside */
     aside{
-        width: 20%; float: right;
+        /* 2. float 배치 */
+        width: 194px; float: right;
+    }
+
+
+    article{
+        padding: 5px;
+        border: 1px solid black;
+        margin: 10px 10px 10px 0;
+    }
+
+</style>
+<!-- header 영역 style -->
+<style>
+    header ul{
+        overflow: hidden;
+    }
+    header ul>li{
+        float: left;
+    }
+    header {
+        position: relative; height: 90px;
+    }
+    header > .logo {
+        /* 조상의 (relative)기준위치로부터 절대위치 잡기 */
+        position: absolute; top: 20px; left: 0;
+    }
+    header > .top-menu{
+        position: absolute; top: 0; right: 5px;
+    }
+    header > .main-menu{
+        position: absolute; bottom: 0; right: 5px;
+    }
+
+</style>
+<!-- footer 영역 style -->
+<style>
+</style>
+<!-- aside 영역 style -->
+<style>
+    aside input[type=radio]{
+        display: none;
+    }
+    .items .tab-item{
+        display: none;
+    }
+    aside input[type=radio]:nth-of-type(1):checked ~ .items .tab-item:nth-of-type(1) {
+        display: block;
+    }
+    aside input[type=radio]:nth-of-type(2):checked ~ .items .tab-item:nth-of-type(2) {
+        display: block;
     }
 </style>
+<!-- section/article 영역 style -->
+<style>
+</style>
+
 </head>
 <body>
     <div class="wrap header">
         <header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
+            <div class="logo">
+                <img src="https://dummyimage.com/50x50/e3e6c8/e3e6c8.jpg&text=a" width="50" height="50">
+            </div>
+            <div class="top-menu">
+                <ul>
+                    <li>상단메뉴1</li>
+                    <li>상단메뉴1</li>
+                    <li>상단메뉴1</li>
+                </ul>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>메뉴1</li>
+                    <li>메뉴1</li>
+                    <li>메뉴1</li>
+                </ul>
+            </div>
         </header>
     </div>
     <div class="wrap content">
         <div id="content">
             <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
+                </article>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
+                </article>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
+                </article>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
+                </article>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
+                </article>
             </section>
             <aside>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
+<!-- 
+    <input type="button" value="a" onclick="a();">
+    <input type="button" value="b">
+ -->
+                <input type="radio" name="tab" id="first" checked>
+                <input type="radio" name="tab" id="second">
+                <div class="labels">
+                    <label for="first">First</label>
+                    <label for="second">Second</label>
+                </div>
+                <div class="items">
+                    <div class="tab-item">
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </div>
+                    <div class="tab-item">
+                        <ul>
+                            <li>Semantic</li>
+                            <li>Transition</li>
+                            <li>...</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                </div>
             </aside>
         </div>
     </div>
