@@ -14,68 +14,11 @@
 <!-- [4] 폰트크기 5~7개정도 class 미리 만들어두기 -->
 <!-- [4] button 3개 class 미리 만들어두기 -->
 <!-- [4] a 모양 미리 만들어두기 -->
-
+<link href="/resources/css/projectname.css" rel="stylesheet">
 <!-- [5] body Layout 영역 -->
-<style>
-    .wrap.header{
-        background: bisque;
-    }
-    .wrap.content{
-        background: beige;
-    }
-    .wrap.footer{
-        background: bisque;
-    }
-    header, #content, footer{
-        box-sizing: border-box;
-        
-        /* 중앙정렬 */
-        width: 960px; margin: 0 auto;
-    }
-    #content{
-         /* 2. float 배치- 한것으로 height 계산 못하므로 overflow hidden 설정 */
-        overflow: hidden;
-    }
-    /* section */
-    section{
-        /* 2. float 배치 */
-        width: 754px; float: left;
-    }
-    /* aside */
-    aside{
-        /* 2. float 배치 */
-        width: 194px; float: right;
-    }
-    article{
-        padding: 5px;
-        border: 1px solid black;
-        margin: 10px 10px 10px 0;
-    }
-
-</style>
+<link href="/resources/css/projectname_layout.css" rel="stylesheet">
 <!-- header 영역 style -->
-<style>
-    header ul{
-        overflow: hidden;
-    }
-    header ul>li{
-        float: left;
-    }
-    header {
-        position: relative; height: 120px;
-    }
-    header > #logo {
-        position: absolute;  left: 20px; top: 30px;
-        font-family: 'Nanum Pen Script', cursive;
-    }
-    #main_gnb {
-        position: absolute;  right: 0; top: 0;
-    }
-    #main_lnb {
-        position: absolute;  right: 0; bottom: 10px;
-    }
-    #main_gnb>ul>li, #main_lnb>ul>li {float: left;}
-</style>
+<link href="resources/css/projectname_header.css" rel="stylesheet">
 <!-- footer 영역 style -->
 <style>
 </style>
@@ -163,9 +106,6 @@
         vertical-align: top;
         height: 50px;
     }
-    #flex_wrap{
-        flex-direction: column;
-    }
     article > #flex_wrap, article .flex-category,article .flex-content-items, article .flex-content-follow {
         display: flex;
     }
@@ -182,9 +122,20 @@
         background-color: blueviolet;
         border-radius: 5px;
     }
+    article > #grid_wrap{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        row-gap: 5px;
+        column-gap: 3px;
+    }
+    article > #grid_wrap > div img.default-img{
+        width: 100%;
+    }
 </style>
 
-<!-- 반응형 
+<!-- 
+    반응형 
+meta viewport 전재되어야 함.
 max-width 사용시 큰px 먼저 .. 작은 px로 작성
 min-width 사용시 작은px 먼저 .. 큰px 작성
 -->
@@ -210,6 +161,15 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
     #flex_wrap{
         flex-direction: column;
     }
+    /* section */
+    section{
+        /* 2. float 배치 */
+        width: 100%;
+    }
+    /* aside */
+    aside{
+        width: 100%;
+    }
 }
 @media (min-width:1000px) {
     * {
@@ -220,6 +180,16 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
     }
     #flex_wrap{
         flex-direction: row;
+    }
+    /* section */
+    section{
+        /* 2. float 배치 */
+        width: 754px; float: left;
+    }
+    /* aside */
+    aside{
+        /* 2. float 배치 */
+        width: 194px; float: right;
     }
 }
 @media (min-width:1200px) {
@@ -232,6 +202,16 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
     #flex_wrap{
         flex-direction: row;
     }
+    /* section */
+    section{
+        /* 2. float 배치 */
+        width: 754px; float: left;
+    }
+    /* aside */
+    aside{
+        /* 2. float 배치 */
+        width: 194px; float: right;
+    }
 }
 @media (min-width:1500px) {
     * {
@@ -242,6 +222,16 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
     }
     #flex_wrap{
         flex-direction: row;
+    }
+    /* section */
+    section{
+        /* 2. float 배치 */
+        width: 754px; float: left;
+    }
+    /* aside */
+    aside{
+        /* 2. float 배치 */
+        width: 194px; float: right;
     }
 }
 </style>
@@ -339,6 +329,68 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
                 </article>
                 <article>
+                    <div id="grid_wrap">
+                        <div>
+                            <div class="flex-title">제목1</div>
+                            <div class="flex-img"><img src="https://dummyimage.com/250/ccc" class="default-img"></div>
+                            <div class="flex-content">
+                                <div class="flex-category"><div>전통주</div><div>추천</div></div>
+                                <div class="flex-content-title"><div>전통주 오마카세에서 하는</div></div>
+                                <div class="flex-content-items"><div>클럽</div><div>.</div><div>강서구</div><div>.</div><div>2023-06-27</div></div>
+                                <div class="flex-content-follow"><div><img src="https://dummyimage.com/15/ccc"></div><div><img src="https://dummyimage.com/15/ccc"></div><div>6/8</div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex-title">제목1</div>
+                            <div class="flex-img"><img src="https://dummyimage.com/250/ccc" class="default-img"></div>
+                            <div class="flex-content">
+                                <div class="flex-category"><div>전통주</div><div>추천</div></div>
+                                <div class="flex-content-title"><div>전통주 오마카세에서 하는</div></div>
+                                <div class="flex-content-items"><div>클럽</div><div>.</div><div>강서구</div><div>.</div><div>2023-06-27</div></div>
+                                <div class="flex-content-follow"><div><img src="https://dummyimage.com/15/ccc"></div><div><img src="https://dummyimage.com/15/ccc"></div><div>6/8</div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex-title">제목1</div>
+                            <div class="flex-img"><img src="https://dummyimage.com/250/ccc" class="default-img"></div>
+                            <div class="flex-content">
+                                <div class="flex-category"><div>전통주</div><div>추천</div></div>
+                                <div class="flex-content-title"><div>전통주 오마카세에서 하는</div></div>
+                                <div class="flex-content-items"><div>클럽</div><div>.</div><div>강서구</div><div>.</div><div>2023-06-27</div></div>
+                                <div class="flex-content-follow"><div><img src="https://dummyimage.com/15/ccc"></div><div><img src="https://dummyimage.com/15/ccc"></div><div>6/8</div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex-title">제목1</div>
+                            <div class="flex-img"><img src="https://dummyimage.com/250/ccc" class="default-img"></div>
+                            <div class="flex-content">
+                                <div class="flex-category"><div>전통주</div><div>추천</div></div>
+                                <div class="flex-content-title"><div>전통주 오마카세에서 하는</div></div>
+                                <div class="flex-content-items"><div>클럽</div><div>.</div><div>강서구</div><div>.</div><div>2023-06-27</div></div>
+                                <div class="flex-content-follow"><div><img src="https://dummyimage.com/15/ccc"></div><div><img src="https://dummyimage.com/15/ccc"></div><div>6/8</div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex-title">제목1</div>
+                            <div class="flex-img"><img src="https://dummyimage.com/250/ccc" class="default-img"></div>
+                            <div class="flex-content">
+                                <div class="flex-category"><div>전통주</div><div>추천</div></div>
+                                <div class="flex-content-title"><div>전통주 오마카세에서 하는</div></div>
+                                <div class="flex-content-items"><div>클럽</div><div>.</div><div>강서구</div><div>.</div><div>2023-06-27</div></div>
+                                <div class="flex-content-follow"><div><img src="https://dummyimage.com/15/ccc"></div><div><img src="https://dummyimage.com/15/ccc"></div><div>6/8</div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex-title">제목1</div>
+                            <div class="flex-img"><img src="https://dummyimage.com/250/ccc" class="default-img"></div>
+                            <div class="flex-content">
+                                <div class="flex-category"><div>전통주</div><div>추천</div></div>
+                                <div class="flex-content-title"><div>전통주 오마카세에서 하는</div></div>
+                                <div class="flex-content-items"><div>클럽</div><div>.</div><div>강서구</div><div>.</div><div>2023-06-27</div></div>
+                                <div class="flex-content-follow"><div><img src="https://dummyimage.com/15/ccc"></div><div><img src="https://dummyimage.com/15/ccc"></div><div>6/8</div></div>
+                            </div>
+                        </div>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
                 </article>
                 <article>
