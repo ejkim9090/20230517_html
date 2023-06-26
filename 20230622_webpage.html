@@ -16,121 +16,21 @@
 <!-- [4] a 모양 미리 만들어두기 -->
 <link href="/resources/css/projectname.css" rel="stylesheet">
 <!-- [5] body Layout 영역 -->
-<link href="/resources/css/projectname_layout.css" rel="stylesheet">
+<!-- <link href="/resources/css/projectname_layout.css" rel="stylesheet"> -->
 <!-- header 영역 style -->
-<link href="resources/css/projectname_header.css" rel="stylesheet">
+<!-- <link href="resources/css/projectname_header.css" rel="stylesheet"> -->
+
 <!-- footer 영역 style -->
 <style>
+    /* @import url("/resources/css/projectname_footer.css"); */
 </style>
 <!-- aside 영역 style -->
 <style>
-    aside{
-        margin-top: 10px;
-    }
-    aside input[type=radio]{
-        display: none;
-    }
-    .items .tab-item{
-        display: none;
-    }
-    aside input[type=radio]:nth-of-type(1):checked ~ .items .tab-item:nth-of-type(1) {
-        display: block;
-    }
-    aside input[type=radio]:nth-of-type(2):checked ~ .items .tab-item:nth-of-type(2) {
-        display: block;
-    }
-    aside .labels {
-        overflow: hidden;
-    }
-    aside .labels > label { 
-        width: 50%; display: block; float: left;
-        color: white;
-        background-color: black;
-        text-align: center;
-        height: 30px;  line-height: 30px;
-        border: 1px solid black; box-sizing: border-box;
-    }
-    aside input[type=radio]:nth-of-type(1):checked ~ .labels label:nth-of-type(1) {
-        background-color: white;
-        color: black;
-    }
-    aside input[type=radio]:nth-of-type(2):checked ~ .labels label:nth-of-type(2) {
-        background-color: white;
-        color: black;
-    }
-    aside .items li{
-        /*         
-        border-bottom: 1px solid black;
-        border-left: 1px solid black;
-        border-right: 1px solid black; 
-        */
-        /*
-        border: 1px solid black;
-        border-top: 0;
-        */
-        border-color: black;
-        border-style: solid;
-        border-width: 0 1px 1px 1px;
-        padding: 5px;
-    }
-    aside .items li {
-        overflow: hidden;
-    }
-    aside .items li  div{
-        float: left;
-    }
-    aside .items li .descript p {
-        /* 말줄임  속성 start */
-        text-overflow: ellipsis; 
-        white-space: nowrap;
-        width: 120px; 
-        overflow: hidden;
-        /* 말줄임  속성 end */
-    }
-    aside .items li .thumnail {
-        margin-right: 5px;
-    }
+    @import url("/resources/css/projectname_aside.css");
 </style>
 <!-- section/article 영역 style -->
 <style>
-    article#table_wrap table {
-        width: 100%;
-    }
-    article#table_wrap th, article#table_wrap td {
-        text-align: center;
-        width: 20%;
-        padding: 5px 0;
-    }
-    article#table_wrap .table-content {
-        /* td/th 는 default vertical-align: middle */
-        vertical-align: top;
-        height: 50px;
-    }
-    article > #flex_wrap, article .flex-category,article .flex-content-items, article .flex-content-follow {
-        display: flex;
-    }
-    article > #flex_wrap > div img.default-img{
-        width: 100%;
-    }
-    article > #flex_wrap > div{
-        border : 1px solid black;
-        margin: 5px 3px;
-    }
-    article .flex-category > div{
-        margin: 0 2px;
-        padding: 3px 5px;
-        background-color: blueviolet;
-        border-radius: 5px;
-    }
-    article > #grid_wrap{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        row-gap: 5px;
-        column-gap: 3px;
-    }
-    article > #grid_wrap > div img.default-img{
-        width: 100%;
-    }
+    @import url("/resources/css/projectname_section.css");
 </style>
 
 <!-- 
@@ -141,7 +41,7 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
 -->
 <style>
 @media (min-width:1px) {
-    * {
+    *:not(a)  {
         font-size: 0.6em;
     }
     body{
@@ -152,7 +52,7 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
     }
 }
 @media (min-width:800px) {
-    * {
+    *:not(a)  {
         font-size: 0.7em;
     }
     body{
@@ -172,7 +72,7 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
     }
 }
 @media (min-width:1000px) {
-    * {
+    *:not(a)  {
         font-size: 0.8em;
     }
     body{
@@ -193,7 +93,7 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
     }
 }
 @media (min-width:1200px) {
-    * {
+    *:not(a)  {
         font-size: 1.0em;
     }
     body{
@@ -394,6 +294,9 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
                 </article>
                 <article>
+                    <div class="mission_a"><h2><a href="#">링크1111</a></h2></div>
+                    <div class="mission_a"><h2><a href="#">링크2</a></h2></div>
+                    <div class="mission_a"><h2><a href="#">링크3</a></h2></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
                 </article>
                 <article>
