@@ -163,6 +163,9 @@
         vertical-align: top;
         height: 50px;
     }
+    #flex_wrap{
+        flex-direction: column;
+    }
     article > #flex_wrap, article .flex-category,article .flex-content-items, article .flex-content-follow {
         display: flex;
     }
@@ -180,6 +183,69 @@
         border-radius: 5px;
     }
 </style>
+
+<!-- 반응형 
+max-width 사용시 큰px 먼저 .. 작은 px로 작성
+min-width 사용시 작은px 먼저 .. 큰px 작성
+-->
+<style>
+@media (min-width:1px) {
+    * {
+        font-size: 0.6em;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    #flex_wrap{
+        flex-direction: column;
+    }
+}
+@media (min-width:800px) {
+    * {
+        font-size: 0.7em;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    #flex_wrap{
+        flex-direction: column;
+    }
+}
+@media (min-width:1000px) {
+    * {
+        font-size: 0.8em;
+    }
+    body{
+        background-color: beige;
+    }
+    #flex_wrap{
+        flex-direction: row;
+    }
+}
+@media (min-width:1200px) {
+    * {
+        font-size: 1.0em;
+    }
+    body{
+        background-color: beige;
+    }
+    #flex_wrap{
+        flex-direction: row;
+    }
+}
+@media (min-width:1500px) {
+    * {
+        font-size: 1.2em;
+    }
+    body{
+        background-color: beige;
+    }
+    #flex_wrap{
+        flex-direction: row;
+    }
+}
+</style>
+
 </head>
 <body>
     <div class="wrap header">
