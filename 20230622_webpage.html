@@ -14,7 +14,13 @@
 <!-- [4] 폰트크기 5~7개정도 class 미리 만들어두기 -->
 <!-- [4] button 3개 class 미리 만들어두기 -->
 <!-- [4] a 모양 미리 만들어두기 -->
-<link href="/resources/css/projectname.css" rel="stylesheet">
+<!-- 
+    css , jpg, png 등 파일은 browser에서 캐쉬에 들어있는 것을 읽어서 그대로 사용함. 
+    파일 내부 수정내용인지하지 못함. 
+    ctrl + f5를 눌러서 브라우저 캐쉬에 있는 파일이 아닌 서버에 있는 파일을 재로딩 할 수 있음.
+    또는 파일명 뒤에 ?after 를 사용하여 매번 로딩할 수 있도록 하는 방법도 있음.
+-->
+<link href="/resources/css/projectname.css?after" rel="stylesheet">
 <!-- [5] body Layout 영역 -->
 <!-- <link href="/resources/css/projectname_layout.css" rel="stylesheet"> -->
 <!-- header 영역 style -->
@@ -30,7 +36,7 @@
 </style>
 <!-- section/article 영역 style -->
 <style>
-    @import url("/resources/css/projectname_section.css");
+    @import url("/resources/css/projectname_section.css?after");
 </style>
 
 <!-- 
@@ -320,7 +326,7 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
                             <li>
                                 <div class="thumnail">
                                     <a href="#">
-                                        <img src="https://dummyimage.com/45/ccc">
+                                        <img src="/resources/images/ryan.svg" height="45" width="45">
                                     </a>
                                 </div>
                                 <div class="descript">
