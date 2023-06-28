@@ -242,19 +242,37 @@
         console.log(obj1);
         // 접근한 key=필드=속성=멤버변수 명이 기존에 존재하면 값교체, 기존없었다면 추가
         console.log(obj1.k10);
-
+        // 삭제
+        delete(obj1.k6);
+        delete(obj1["k6"]);
+        console.log(obj1);
 
 
         console.log("=====함수2========");
-        function func2(){
-            console.log("안녕");  // 콘솔창에 display 하는 행동. 
+        function func2( nickname, title, content ){
             var obj3 = new Object();
-            obj3.k1 = 10;
-            obj3.k2 = function(){console.log("obj3의 함수 k2")};
+            obj3.k1 = nickname;
+            obj3.k2 = title;
+            obj3.k3 = content;
+            obj3.k4 = function(){console.log("obj3의 함수 k2")};
             return obj3;
         }
-        console.log(func2());
+        console.log(func2("홍길동", "게시글제목남김", "날씨 좋네"));
+        var nana = func2("나나", "나나나", "날씨 좋네");
+        nana.k4();
 
+
+        console.log("=====배열2========");
+        var arr1 = [10, 20];
+        arr1[2] = nana;
+        arr1[3] = {
+            k1 : 10,
+            k2 : "안녕"
+        };
+        console.log(arr1); // (4) [10, 20, {…}, {…}]
+        var obj4 = {k1:10, k2:arr1};  
+        console.log(obj4);  // {k1: 10, k2: Array(4)}
+        console.log(obj4.k2); // (4) [10, 20, {…}, {…}]
     </script>
 </body>
 </html>
