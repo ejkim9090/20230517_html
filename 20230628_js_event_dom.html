@@ -6,6 +6,70 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="#" method="get"  onsubmit="console.log('1');">
+        <input type="text" name="nick">
+        <input type="submit" id="btnSubmit" onsubmit="console.log('2');" onclick="console.log('4');">
+    </form>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click",function(){
+            console.log('5');
+        });
+        document.getElementById("btnSubmit").addEventListener("submit",function(){
+            console.log('6');
+        });
+    </script>
+    <form id="frmNick">
+        <input type="text" name="nick">
+        <input type="button" id="frmNickSubmit" value="submit기능">
+    </form>
+    <script>
+        document.getElementById("frmNickSubmit").addEventListener("click",function(){
+            console.log("click이벤트로 submit동작 함수");
+            // 주로 입력한 값들의 유효성 검사를 함.
+            // 예 입력한 문자가 20글자이상이면 alert 창으로 경고하고
+            // 다시 입력하게 한 후 문자가 20글자미만이면 action 으로 이동(submit동작함)
+            var nickElement = document.getElementsByName("nick");
+            console.log(nickElement);
+            console.log(nickElement[1].value);
+            if(nickElement[1].value.length < 20){
+                console.log("nick이 20글자 미만");
+                //return true;
+                document.getElementById("frmNick").action = "#";
+                document.getElementById("frmNick").method = "get";
+                document.getElementById("frmNick").submit();
+            } else {
+                console.log("nick이 20글자 이상");
+                alert("20글자 미만으로 작성해주세요");
+                //return false;
+            }
+        });
+    </script>
+    <form action="#2" method="get" onsubmit="return frmSubmitHandler();">
+        <input type="text" name="nick">
+        <input type="submit" value="submit기능2" >
+    </form>
+    <script>
+        function frmSubmitHandler(){
+            console.log("sumbit이벤트 함수");
+            // 주로 입력한 값들의 유효성 검사를 함.
+            // 예 입력한 문자가 20글자이상이면 alert 창으로 경고하고
+            // 다시 입력하게 한 후 문자가 20글자미만이면 action 으로 이동(submit동작함)
+            var nickElement = document.getElementsByName("nick");
+            console.log(nickElement);
+            console.log(nickElement[2].value);
+            if(nickElement[2].value.length < 20){
+                console.log("nick이 20글자 미만");
+                return true;
+            } else {
+                console.log("nick이 20글자 이상");
+                alert("20글자 미만으로 작성해주세요");
+                return false;
+            }
+        }
+    </script>
+
+
+
     <button type="button" id="btn1" class="c1">버튼 1</button>
     <button type="button" id="btn2" class="c1">버튼 2</button>
     <button type="button" id="btn3" class="c1 c2">버튼 3</button>
