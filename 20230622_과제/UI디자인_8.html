@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            width: 960px;
+            position: relative;
+            margin: 0 auto;
+            padding: 0;
+        }
+        header .title p:first-of-type{
+            margin: 0;
+            margin-top: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 26px;
+        }
+        header .title p:nth-of-type(2){
+            margin: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+        }
+        header .menu1{
+            top: 10px;
+            right: 0;
+            position: absolute;
+        }
+        header .menu1 a{
+            margin: 0px;
+            padding: 2px 8px;
+            border: 1px solid black;
+            color: black;
+            text-decoration: none;
+        }
+        header .menu1 a:first-of-type{
+            border-top-left-radius: 40%;
+            border-bottom-left-radius: 40%;
+        }
+        header .menu1 a:last-of-type{
+            border-top-right-radius: 40%;
+            border-bottom-right-radius: 40%;
+        }
+        header .menu1 a:hover{
+            color:white;
+            background-color: black;
+        }
+        header .menu2{
+            top: 120px;
+            right: 0;
+            position: absolute;
+        }
+        header .menu2 a{
+            margin: 0px;
+            padding: 2px 8px;
+            border: 1px solid black;
+            color: black;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        header .menu2 a:first-of-type{
+            border-top-left-radius: 30%;
+            border-bottom-left-radius: 30%;
+        }
+        header .menu2 a:last-of-type{
+            border-top-right-radius: 30%;
+            border-bottom-right-radius: 30%;
+        }
+        header .menu2 a:hover{
+            color:white;
+            background-color: black;
+        }
+        section{
+            position: absolute;
+            width: 740px;
+            top: 175px;
+        }
+        section article p{
+            box-sizing: border-box;
+            outline: 1px solid black;
+            margin: 0;
+            padding: 15px 10px;
+        }
+        section article span{
+            display: block;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 0;
+        }
+        aside{
+            position: absolute;
+            top: 175px;
+            right: 0;
+            width: 200px;
+        }
+        aside input[type=radio]{
+            display: none;
+        }
+        aside .tab #test1{
+            display: inline-block;
+            outline: 1px solid black;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0;
+            text-align: center;
+        }
+        aside .tab #test2{
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            outline: 1px solid black;
+            margin: 0 ;
+            text-align: center;
+        }
+        aside items.tab-item ul li a p:first-of-type{
+            display: inline-block;
+        }
+        aside .tab #test1:hover{
+            color: white;
+            background-color: black;
+        }
+        aside .tab #test2:hover{
+            color: white;
+            background-color: black;
+        }
+        aside .items ul{
+            box-sizing: border-box;
+            outline: 1px solid black;
+            margin: 0;
+            padding: 0;
+        }
+        aside .items ul li img{
+            display: inline-block;
+            margin: 0;
+            padding:0;
+        }
+        aside .items li{
+            display: inline-block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        aside .items{
+            display: none;
+        }
+        aside #first:checked~#items1{
+            display: block;
+        }
+        aside #second:checked~#items2{
+            display: block;
+        }
+        aside #items2 p{
+            outline: 1px solid black;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <p>Rint Development</p>
+            <p>HTML5+CSS3 Basic</p>
+        </div>
+        <div class="menu1">
+            <a href="Web1">Web1</a><a href="Mobile">Mobile</a><a href="Game">Game</a><a href="Simulation">Simulation</a><a href="Data">Data</a>
+        </div>
+        <div class="menu2">
+            <a href="HTML5">HTML5</a><a href="CSS3">CSS3</a><a href="JavaScript">JavaScript</a><a href="jQuery">jQuery</a><a href="Node.js">Node.js</a>
+        </div>
+    </header>
+    <main>
+        <section class="articles">
+            <article>
+                <p><span>Main Article</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><span>Main Article</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><span>Main Article</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <input type="radio" name="tab1" id="first" checked>
+        <input type="radio" name="tab1" id="second">
+        <div class="tab">
+            <label for="first" id="test1">first</label><!--
+        --><label for="second" id="test2">second</label>    
+        </div>                  
+        <div class="items" id="items1">
+        <ul>
+        <li><img src="https://dummyimage.com/45/ccc/1523eb.jpg&text=hi">
+        <li>HTML5 Canvas</li>
+        <li>2020-03-08</li>
+        </li></ul>
+        <ul>
+        <li><img src="https://dummyimage.com/45/ccc/1523eb.jpg&text=hi">
+        <li>HTML5 Canvas</li>
+        <li>2020-03-08</li>
+        </ul>
+        <ul>
+        <li><img src="https://dummyimage.com/45/ccc/1523eb.jpg&text=hi">
+        <li>HTML5 Canvas</li>
+        <li>2020-03-08</li>
+        </li></ul>
+        <ul>
+        <li><img src="https://dummyimage.com/45/ccc/1523eb.jpg&text=hi">
+        <li>HTML5 Canvas</li>
+        <li>2020-03-08</li>
+        </li></ul>
+        </div>
+        <div class="items" id="items2">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+    </aside>
+</body>
+</html>

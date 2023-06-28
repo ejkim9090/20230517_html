@@ -179,18 +179,81 @@
 
         arr1.push(function(){console.log("함수도 값으로 넣을 수 있음")});
 
-        // java에서 메소드 중요
-        // overloading 
+        console.log("=====함수========");
+        // java에서 overloading - 매개변수 개수, 자료형이 다를때
+        // js - 같은 이름의 함수 변수 사용시 마지막에 대입한 값으로 정의됨.
+        // 매개변수 개수
         function sum(a,b){
-
+            console.log("sum 1 : " + a + ", "+ b);
         }
         function sum(a, b, msg){
-
+            console.log("sum 함수 실행 중");
+            //console.log("sum 2 :" + a + ", "+ b+ ", "+msg);
+            if(typeof(b) == "function"){
+                b();
+            } else if(typeof(b)=="undefined"){
+                console.log("b가 undefined");
+            }
+            console.log("sum 함수 실행 끝");
         }
+        //sum = 1000;
+        // Error:  Uncaught TypeError: sum is not a function
+
+        sum(10, 20);
+        sum(10, 20, 30);
+        sum();
+        sum(10, 20, 30, 40, 50);
+        console.log("=============");
+        sum("문자", function(){console.log("매개인자로보낸익명함수 1") }, new Object(), 40, 50);
+        sum("문자", function(){console.log("매개인자로보낸익명함수 2") }, new Object(), 40, 50);
+        console.log("=============");
+        sum("문자", abc2, new Object(), 40, 50);  // abc2 는 function 형태
+        console.log("=============");
+        sum("문자", abc2(), new Object(), 40, 50);  // 콜백아님!! abc2()를 실행한 결과값 형태
+        console.log("=============");
+
+
+        console.log("=======객체Object=======");
+        var obj2 = new Object();
+        obj2.k1 = 100;
+
+        var obj1 = {
+            k1 : 10,
+            k2 : "안녕",
+            k3 : function(){
+                console.log("obj1의 k3키에 해당하는 함수임.");
+            },
+            k4 : 20
+            // 더 추가
+        };
+        obj1.k1 = 1000;
+        obj1["k1"] = 2000;
+        obj1.k3();
+        obj1["k3"]();
+        //obj1.k2();  // obj2.k2 is not a function
+
+        // 더 추가
+        // k5 : 100
+        // k6 : function(){console.log("obj1의 k6키에 해당하는 함수임."); }
+        obj1.k5 = 100;
+        console.log(obj1);
+        obj1.k6 = function(){console.log("obj1의 k6키에 해당하는 함수임."); };
+        obj1["k7"] = function(){console.log("obj1의 k7키에 해당하는 함수임."); };
+        console.log(obj1);
+        // 접근한 key=필드=속성=멤버변수 명이 기존에 존재하면 값교체, 기존없었다면 추가
+        console.log(obj1.k10);
 
 
 
-
+        console.log("=====함수2========");
+        function func2(){
+            console.log("안녕");  // 콘솔창에 display 하는 행동. 
+            var obj3 = new Object();
+            obj3.k1 = 10;
+            obj3.k2 = function(){console.log("obj3의 함수 k2")};
+            return obj3;
+        }
+        console.log(func2());
 
     </script>
 </body>
