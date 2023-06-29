@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery dom event</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(loadedHandler); //페이지로딩되는 이벤트 등록
+        function loadedHandler(){
+            //페이지로딩되면 수행됨.
+            $("#show1").on("click", function(){
+                $("#content1").show(1000);
+                $("#content2").hide();
+            });
+            $("#show2").on("click", function(){
+                $("#content2").show(1000);
+                $("#content1").hide();
+            });
+            $("#showhide").on("click", function(){
+                $("#content1").toggle();
+                $("#content2").toggle();
+            });
+        }
+    </script>
+</head>
+<body>
+    <button id="show1" >보이기1</button>
+    <button id="show2" >보이기2</button>
+    <button id="showhide" >토글</button>
+    <div id="content1">
+        <ul class="menu">
+            <li>1111 menu1</li>
+            <li>menu2</li>
+            <li id="select">menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+            <li>menu6</li>
+        </ul>
+    </div>
+    <div id="content2">
+        <ul class="menu">
+            <li>222 menu1</li>
+            <li>menu2</li>
+            <li id="select">menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+            <li>menu6</li>
+        </ul>
+    </div>
+    <button id="btnAdd" >추가</button>
+
+    <script>
+        //$("select").parents();
+    </script>
+    
+</body>
+
+</html>
