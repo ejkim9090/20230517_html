@@ -141,7 +141,7 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
     }
 }
 </style>
-
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </head>
 <body>
     <div class="wrap header">
@@ -200,7 +200,7 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
                 </article>
                 <article>
-                    <div id="flex_wrap">
+                    <div class="flex_wrap">
                         <div>
                             <div class="flex-title">제목1</div>
                             <div class="flex-img"><img src="https://dummyimage.com/250/ccc" class="default-img"></div>
@@ -305,8 +305,43 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
                     <div class="mission_a"><h2><a href="#">링크3</a></h2></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
                 </article>
-                <article>
+                <article id="dom_div">
+                    <button type="button" id="btnAddContent">더보기</button>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aut perspiciatis, similique quia inventore rerum assumenda possimus incidunt omnis illum tempora porro quaerat, eveniet iusto error fugit enim delectus!</p>
+                    <div class="flex_wrap">
+                        <!-- <div>
+                            <div class="flex-title">제목1</div>
+                            <div class="flex-img"><img src="https://dummyimage.com/250/ccc" class="default-img"></div>
+                            <div class="flex-content">
+                                <div class="flex-category"><div>전통주</div><div>추천</div></div>
+                            </div>
+                        </div> -->
+                    </div>
+<script>
+    addDiv5();
+    function addDiv5(){
+        var htmlVal = "";
+        for( var i =0; i< 5; i++){
+            htmlVal += `
+                        <div>
+                            <div class="flex-title">제목1</div>
+                            <div class="flex-img"><img src="https://dummyimage.com/250/ccc" class="default-img"></div>
+                            <div class="flex-content">
+                                <div class="flex-category"><div>전통주</div><div>추천</div></div>
+                            </div>
+                        </div>
+                    `;
+        }
+        $("#dom_div>.flex_wrap:last-of-type").append(htmlVal);
+    }
+    $("#btnAddContent").on("click",function(){
+        var htmlVal='<div class="flex_wrap"></div>';
+        $("#dom_div").append(htmlVal);
+        addDiv5();
+        //$(this).prev().append(htmlVal);
+        // 2군데 $(".flex_wrap").append(htmlVal);
+    });
+</script>
                 </article>
             </section>
             <aside>
