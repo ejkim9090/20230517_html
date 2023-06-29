@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <script src="/resources/js/jquery-3.7.0.js"></script>
+    <script>
+    
+    </script>
+</head>
+<body>
+    <button type="button" id="btn1" class="c1">버튼 1</button>
+    <button type="button" id="btn2" class="c1">버튼 2</button>
+    <button type="button" id="btn3" class="c1 c2">버튼 3</button>
+    <button type="button" id="btn4" class="c2">버튼 4</button>
+    <button type="button" id="btn5" class="c2">버튼 5</button>
+
+    <!-- <button type="button" id="btn_add" onclick="addClickHandler();">추가</button>
+    <button type="button" id="btn_delete" onclick="deleteClickHandler();">삭제</button> -->
+    <button type="button" id="btn_add" >추가</button>
+    <button type="button" id="btn_delete" >삭제</button>
+    
+    <!-- <div>안녕 난 js로 만들어진 노드야</div> -->
+<script>
+    $("#btn_add").click(jQaddClickHandler);
+    $("#btn_delete").click(jQdeleteClickHandler);
+    // $("#btn_add").on("click", jQaddClickHandler);
+    // $("#btn_delete").on("click", jQdeleteClickHandler);
+    // 화면에 element 요소노드 및 text노드를 추가
+    function jQaddClickHandler(){
+        console.log("jQaddClickHandler 호출");
+        var htmlVal = "<div>안녕 난 js로 만들어진 노드야</div>";
+        $("body").append(htmlVal);
+    }
+    // 화면에 element 요소노드 및 text노드를 삭제
+    function jQdeleteClickHandler(){
+        console.log("jQdeleteClickHandler 호출");
+        var delElement = $("#btn4");
+        delElement.remove();
+    }
+    $('#btn3').css({borderColor:"red", backgroundColor:"#333"});
+    $('#btn2').css("border-color", "blue");
+</script>
+
+<script>
+    document.getElementById('btn5').style.borderColor= "red";
+    // 어제 : 화면에 element 요소노드를 찾기
+    // 불편 - jQuery 대체
+
+    // 이벤트 등록 1
+    // document.querySelector("#btn_add").onclick = addClickHandler;
+    // document.querySelector("#btn_delete").onclick = deleteClickHandler;
+    // 이벤트 등록 2
+    // document.querySelector("#btn_add").addEventListener("click", addClickHandler);
+    // document.querySelector("#btn_delete").addEventListener("click", deleteClickHandler);
+
+    // 화면에 element 요소노드 및 text노드를 추가
+    function addClickHandler(){
+        var div1 = document.createElement("div");
+        var textnode1 = document.createTextNode("안녕 난 js로 만들어진 노드야");
+        div1.appendChild(textnode1);
+        document.body.appendChild(div1);
+    }
+
+    // 화면에 element 요소노드 및 text노드를 삭제
+    function deleteClickHandler(){
+        var delElement = document.getElementById("btn4");
+        delElement.remove();
+    }
+
+</script>
+
+
+
+
+</body>
+</html>

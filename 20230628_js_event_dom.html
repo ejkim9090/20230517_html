@@ -77,6 +77,7 @@
     <button type="button" id="btn5" class="c2">버튼 5</button>
 
     <script>
+        
         var c1Elements = document.getElementsByClassName("c1");
         console.log(c1Elements);
         // c1Elements[0].onclick = c1ClickHandler;
@@ -89,7 +90,7 @@
         for(var i = 0; i < c2Elements.length; i++){
             c2Elements[i].addEventListener("click", c2ClickHandler);
         }
-
+        
         function c1ClickHandler(){
             console.log("c1 Click");
             console.log(this);
