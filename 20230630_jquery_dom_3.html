@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+    <div id="content1">
+        <input type="hidden" name="board_id" class="board_id" value="16325">
+        <span class="board_id" style="display: none;">16325</span>
+        <ul class="menu">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li id="select">menu3</li>
+            <li class="c_select">menu4</li>
+            <li>menu5</li>
+            <li>menu6</li>
+        </ul>
+    </div>
+    <button id="btnAdd" >추가</button>
+    <script>
+        var newMenu = "<li>신메뉴</li>";
+        var $newMenu = $(newMenu);
+        //var $newMenu = $("<li>신메뉴</li>");
+
+        var obj2 = {
+            k1 : function(){},
+            k2 : "sss"
+
+        };
+        $("#btnAdd").on({
+            click: function(){
+            // console.log("추가버튼 클릭됨");
+            // 1. ul 첫번째 신메뉴 추가
+            //$("ul").prepend(newMenu);
+            $newMenu.prependTo("ul");
+
+            // 2. menu3 위에  신메뉴 추가
+            // $("#select").before(newMenu);
+            $newMenu.insertBefore("#select");
+
+            // 3. menu4 다음에  신메뉴 추가
+            // $(".c_select").after(newMenu);
+            $(newMenu).insertAfter(".c_select");
+
+            // 4. ul의 마지막메뉴로  신메뉴 추가
+            // $("ul").append(newMenu);
+            $(newMenu).appendTo("ul");
+        },
+        doubleclick: function(){},
+        focus: function(){},
+        
+    }
+        );
+    </script>
+</body>
+</html>
