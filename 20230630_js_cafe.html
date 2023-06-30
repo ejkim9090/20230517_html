@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카페 포스기</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link href="/resources/css/reset.css" rel="stylesheet">
+    <!-- style 지정 - 각자 실습 -->
+    <!--  -->
+    <script>
+        $(loadedHandler);
+        function loadedHandler(){
+            // event 등록 
+            $('.c').on("blur", cntBlurHandler);
+            $("[type=button]").on("click", calcClickHandler);
+        }
+
+        // 각종 기능 함수들
+        function cntBlurHandler(event){
+            console.log(this);
+            console.log(event.target);  // event.target == this
+            console.log(event);
+            // 각자 실습 
+        }
+        function calcClickHandler(event){
+            console.log(this);
+            console.log(event.target);  // event.target == this
+            console.log(event);
+            // 각자 실습
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table border="1">
+            <tr>
+                <th>메뉴</th>
+                <th>가격</th>
+                <th>수량</th>
+                <th>합계</th>
+            </tr>
+            <tr>
+                <td>아메리카노</td>
+                <td>2500</td>
+                <td><input type="text" name="c1" id="c1" class="c"></td>
+                <td><input type="text" name="c1Price" id="c1Price" class="p" readonly></td>
+            </tr>
+            <tr>
+                <td>라떼</td>
+                <td>3000</td>
+                <td><input type="text" name="c2" id="c2" class="c"></td>
+                <td><input type="text" name="c2Price" id="c2Price" class="p" readonly></td>
+            </tr>
+            <tr>
+                <td>생강라떼</td>
+                <td>4500</td>
+                <td><input type="text" name="c3" id="c3" class="c"></td>
+                <td><input type="text" name="c3Price" id="c3Price" class="p" readonly></td>
+            </tr>
+            <tr>
+                <th>합계</th>
+                <th></th>
+                <th><input type="text" name="cTotalCnt" id="cTotalCnt" class="c" readonly></th>
+                <th><input type="text" name="cTotalPrice" id="cTotalPrice" class="p" readonly></th>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="button" value="계산하기">
+                    <input type="reset" >
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
