@@ -25,13 +25,7 @@
         var $newMenu = $(newMenu);
         //var $newMenu = $("<li>신메뉴</li>");
 
-        var obj2 = {
-            k1 : function(){},
-            k2 : "sss"
-
-        };
-        $("#btnAdd").on({
-            click: function(){
+        $("#btnAdd").on("click", function(){
             // console.log("추가버튼 클릭됨");
             // 1. ul 첫번째 신메뉴 추가
             //$("ul").prepend(newMenu);
@@ -48,12 +42,7 @@
             // 4. ul의 마지막메뉴로  신메뉴 추가
             // $("ul").append(newMenu);
             $(newMenu).appendTo("ul");
-        },
-        doubleclick: function(){},
-        focus: function(){},
-        
-    }
-        );
+        });
     </script>
 </body>
 </html>
