@@ -30,29 +30,117 @@
     <button id="show2" >보이기2</button>
     <button id="showhide" >토글</button>
     <div id="content1">
+        <input type="hidden" name="board_id" class="board_id" value="16324">
+        <span class="board_id" style="display: none;">16324</span>
         <ul class="menu">
             <li>1111 menu1</li>
             <li>menu2</li>
             <li id="select">menu3</li>
-            <li>menu4</li>
+            <li class="c_select c2 c3"><img src="/resources/images/ryan.svg">텍스트노드<span>메뉴4</span></li>
             <li>menu5</li>
             <li>menu6</li>
         </ul>
     </div>
     <div id="content2">
+        <input type="hidden" name="board_id" class="board_id" value="16325">
+        <span class="board_id" style="display: none;">16325</span>
         <ul class="menu">
             <li>222 menu1</li>
             <li>menu2</li>
             <li id="select">menu3</li>
-            <li>menu4</li>
+            <li class="c_select">menu4</li>
             <li>menu5</li>
             <li>menu6</li>
         </ul>
     </div>
     <button id="btnAdd" >추가</button>
-
     <script>
-        //$("select").parents();
+        var html1 = document.getElementsByClassName("c_select")[0].innerHTML;
+        console.log(html1);
+        // document.getElementsByClassName("c_select")[0].innerHTML = '<img src="/resources/images/ryan.svg">텍스트노드';
+        var html2 = document.getElementsByClassName("c_select")[0].innerText;
+        console.log(html2);
+        //document.getElementsByClassName("c_select")[0].innerText = '<img src="/resources/images/ryan.svg">텍스트노드';
+
+        var html3 = $(".c_select").eq(0).html();
+        console.log(html3);
+        //$(".c_select").eq(0).html('<img src="/resources/images/ryan.svg">텍스트노드');
+
+        var html4 = $(".c_select").eq(0).text();
+        console.log(html4);
+        //$(".c_select").eq(0).text('<img src="/resources/images/ryan.svg">텍스트노드');
+
+        $(".c_select").eq(1).attr("a", "v1");
+        //var html5 = $(".c_select").eq(1).attr("a");
+        //$(".c_select").eq(1).attr("class", "c1");
+        $(".c_select").eq(1).addClass("c1 c2");
+        $(".c_select").eq(1).removeClass("c1");
+
+        // 여러요소에 이벤트 등록됨. jQuery
+        $(".c_select").on("click", function(){
+            console.log("select 눌림");
+            console.log(this);
+            console.log($(this));
+            if($(this).hasClass("c2")){
+                console.log("c2 클래스 포함되어있음");
+            }
+        });
+        //id # 는 하나의 요소만 찾고 더이상 찾지 않음.
+        //id #은 하나에만 등록됨.
+        $("#select").on("click", function(){  
+            console.log("select 눌림");
+            console.log(this);
+            console.log($(this));
+        });
+
+        var arr1 = [10, "hello", 30];
+        $.each(arr1, function(idx, element){
+            console.log("each cb함수: "+idx+", "+element);
+            console.log(this);
+        });
+        $.each(arr1, function(){
+            console.log("each cb함수: ");
+            console.log(this);
+        });
+        $.each(arr1, function(idx){
+            console.log("each cb함수: "+idx);
+            console.log(this);
+        });
+        console.log("====");
+        $.each($(".c_select"), function(idx, element){
+            console.log("each cb함수: "+idx+", "+element);
+            console.log(element);
+            console.log(this);
+            $(this).css("color", "blue");
+        });
+        $(".c_select").each(function(idx, element){
+            console.log("each cb함수: "+idx+", "+element);
+            console.log(element);
+            console.log(this);
+            $(this).css("color", "blue");
+        });
+
+        //$(".c_select").addClass("c4");
+        $(".c_select").addClass(function(idx){
+            console.log("addClass 의 function 호출");
+            console.log(idx);
+            console.log(this);
+            return "c_"+idx;
+            // if(idx==0){
+            //     return "c0";
+            // } else {
+            //     return "c";
+            // }
+        });
+        //$(".c_select").toggleClass(function(idx, item){ return "c_1";  }, true);   // addClass()
+        //$(".c_select").toggleClass(function(idx, item){ return "c_1"; }, false);  // removeClass()
+        console.log("==========");
+        var $element1 = $(".c_select").eq(0);   // .eq(0) 의 자료형은 jQuery 형
+        var element1 = $(".c_select").get(0);  // .get(0) 의 자료형은 js DOM 형
+        console.log($element1);
+        console.log(element1);
+
+
     </script>
     
 </body>
