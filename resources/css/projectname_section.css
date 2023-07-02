@@ -11,13 +11,13 @@ article#table_wrap .table-content {
     vertical-align: top;
     height: 50px;
 }
-article > #flex_wrap, article .flex-category,article .flex-content-items, article .flex-content-follow {
+article > .flex_wrap, article .flex-category,article .flex-content-items, article .flex-content-follow {
     display: flex;
 }
-article > #flex_wrap > div img.default-img{
+article > .flex_wrap > div img.default-img{
     width: 100%;
 }
-article > #flex_wrap > div{
+article > .flex_wrap > div{
     border : 1px solid black;
     margin: 5px 3px;
 }
@@ -36,6 +36,7 @@ article > #grid_wrap{
 }
 article > #grid_wrap > div img.default-img{
     width: 100%;
+    rotate: 270deg;
 }
 
 article .mission_a h2 a {
