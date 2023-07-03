@@ -30,6 +30,28 @@
                 *
                 $(this).val()
             );
+            updateTotal();
+        }
+
+        function calcClickHandler(e){
+            // console.log(this);
+            // console.log(e.target);  // event.target == this
+            // console.log(e);
+            // 각자 실습
+            $(".c.in").each(function(idx, item){
+                //this = item
+                console.log(item);
+                // 메뉴마다 합계가격
+                $(item).parent().next().children('input.p').val(
+                    $(item).parent().prev().text()
+                    *
+                    $(item).val()
+                );
+            });
+            updateTotal();
+        }
+
+        function updateTotal(){
             var sum = 0;
             // 메뉴 총 개수 합계 
             $(".c.in").each(function (idx, item){
@@ -55,50 +77,6 @@
                 console.log(item);
                 if(idx != ($(".p").length-1)){
                     // Number() 대신 * 1 로 숫자형태변경
-                    var i = $(item).val() * 1;
-                    if (isNaN(i)){
-                        i = 0;
-                    }
-                    sum += i;
-                }
-            });
-            console.log(sum);
-            $("#cTotalPrice").val(sum);
-        }
-
-        function calcClickHandler(e){
-            // console.log(this);
-            // console.log(e.target);  // event.target == this
-            // console.log(e);
-            // 각자 실습
-            $(".c.in").each(function(idx, item){
-                //this = item
-                console.log(item);
-                // 메뉴마다 합계가격
-                $(item).parent().next().children('input.p').val(
-                    $(item).parent().prev().text()
-                    *
-                    $(item).val()
-                );
-            });
-            var sum = 0;
-            // 메뉴 총 개수 합계 
-            $(".c.in").each(function (idx, item){
-                console.log(item);
-                var i = Number($(item).val());
-                if (isNaN(i)){
-                    i = 0;
-                }
-                sum += i;
-            });
-            console.log(sum);
-            $("#cTotalCnt").val(sum);
-
-            sum = 0;
-            // 합계 
-            $(".p").each(function (idx, item){
-                console.log(item);
-                if(idx != ($(".p").length-1)){
                     var i = $(item).val() * 1;
                     if (isNaN(i)){
                         i = 0;
