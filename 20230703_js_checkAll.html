@@ -16,7 +16,8 @@
     <div>
         <label for="allCheck">전체선택 : </label>
         <input type="checkbox" id="allCheck">
-        <!-- <span>반대선택 : </span><input type="checkbox" id="revCheck"> -->
+        <label for="revCheck">반대선택 : </label>
+        <input type="checkbox" id="revCheck">        
     </div>
     <div class="checkboxs">
         <!-- <div>
@@ -49,8 +50,10 @@
 
     /* 2. 전체선택 이벤트 등록 */
     $("#allCheck").on("click", allCheckHandler);
-    /* 4. item 이벤트 등록 */
+    /* 4. item 들 이벤트 등록 */
     $(".item").on("click", itemCheckHandler);
+    /* 6. 반대선택 이벤트 등록 */
+    $("#revCheck").on("click", revCheckHandler);
 
     /* 3. 전체선택 이벤트 처리 Handler */
     function allCheckHandler(e){
@@ -58,6 +61,7 @@
         // console.log($(this).attr("checked")); 
         // prop() 메소드는 동적페이지 변화를 인지하고 그 결과값을 true/false로 줌.
         console.log($(this).prop("checked"));  
+        // console.log($(this).prop("type"));  
         // 현재 전체선택 상태 true / false - item들에 적용
         $(".item").prop("checked", $(this).prop("checked"));
     }
@@ -70,6 +74,16 @@
         } else{
             $("#allCheck").prop("checked", false);
         }
+    }
+    /* 7. 반대선택 이벤트 처리 Handler */
+    function revCheckHandler(e){
+        // 반대선택 - item들의 checked 상태의 반대 적용
+        $(".item").each(function(idx, item){
+            // console.log(idx);
+            // console.log(status);
+            var status = $(item).prop("checked");
+            $(item).prop("checked", !status);
+        });
     }
 </script>
 
