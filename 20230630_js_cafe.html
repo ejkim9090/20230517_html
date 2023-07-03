@@ -12,7 +12,7 @@
         $(loadedHandler);
         function loadedHandler(){
             // event 등록 
-            $('.c').on("blur", cntBlurHandler);
+            //$('.c').on("blur", cntBlurHandler);
             $("[type=button]").on("click", calcClickHandler);
         }
 
@@ -24,13 +24,14 @@
             // 각자 실습
             // console.log($(this).parent().prev().text());
             console.log($(this).val());  // console.log(this.value);
+            // 메뉴마다 합계가격
             $(this).parent().next().children('input.p').val(
                 $(this).parent().prev().text()
                 *
                 $(this).val()
             );
             var sum = 0;
-            // 합계 
+            // 메뉴 총 개수 합계 
             $(".c.in").each(function (idx, item){
                 // each - for문은 대신함. event에 handler 를 등록함
                 // each function 에서의 this사용시 위 this와 헛갈림. 
@@ -66,10 +67,47 @@
         }
 
         function calcClickHandler(e){
-            console.log(this);
-            console.log(e.target);  // event.target == this
-            console.log(e);
+            // console.log(this);
+            // console.log(e.target);  // event.target == this
+            // console.log(e);
             // 각자 실습
+            $(".c.in").each(function(idx, item){
+                //this = item
+                console.log(item);
+                // 메뉴마다 합계가격
+                $(item).parent().next().children('input.p').val(
+                    $(item).parent().prev().text()
+                    *
+                    $(item).val()
+                );
+            });
+            var sum = 0;
+            // 메뉴 총 개수 합계 
+            $(".c.in").each(function (idx, item){
+                console.log(item);
+                var i = Number($(item).val());
+                if (isNaN(i)){
+                    i = 0;
+                }
+                sum += i;
+            });
+            console.log(sum);
+            $("#cTotalCnt").val(sum);
+
+            sum = 0;
+            // 합계 
+            $(".p").each(function (idx, item){
+                console.log(item);
+                if(idx != ($(".p").length-1)){
+                    var i = $(item).val() * 1;
+                    if (isNaN(i)){
+                        i = 0;
+                    }
+                    sum += i;
+                }
+            });
+            console.log(sum);
+            $("#cTotalPrice").val(sum);
         }
         // each경우 event handler 처럼 함수형태 만들어서 사용하지 않음 - 권장
         // var globalValueSum = 0;
