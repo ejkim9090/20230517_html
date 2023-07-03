@@ -35,10 +35,10 @@
         </div> -->
     </div>
     <div class="checkedItems">
-        <div data-id="1">
+        <!-- <div data-id="1">
             <span>id-1</span>
             <button type="button" class="btnUncheck">선택해제</button>
-        </div>
+        </div> -->
     </div>
 <script>
     /* 1. 화면 item 구성 */
@@ -57,14 +57,22 @@
         `;
     }
     $(".checkboxs").append(htmlVal);
+    /* 4. item 들 이벤트 등록 */
+    $(".item").on("click", itemCheckHandler);
 
 
     /* 2. 전체선택 이벤트 등록 */
     $("#allCheck").on("click", allCheckHandler);
-    /* 4. item 들 이벤트 등록 */
-    $(".item").on("click", itemCheckHandler);
     /* 6. 반대선택 이벤트 등록 */
     $("#revCheck").on("click", revCheckHandler);
+    /* 10. 선택해제 이벤트 등록 - 이시점에 등록 안됨. */
+    //$(".btnUncheck").on("click", btnUncheckHandler);
+
+    /* 11. 선택해제 이벤트 처리 handler */
+    function btnUncheckHandler(){
+        console.log("btnUncheckHandler");
+        console.log(this);
+    }
 
     /* 3. 전체선택 이벤트 처리 Handler */
     function allCheckHandler(e){
@@ -86,9 +94,9 @@
             $("#allCheck").prop("checked", false);
         }
 
-        /* checkedItems 에 선택된 item을 div로 생성 */
+        /* 8. checkedItems 에 선택된 item을 div로 생성 */
         if($(this).prop("checked") == true) {
-            console.log($(this).parent().data("id")); 
+            // console.log($(this).parent().data("id")); 
             var dataid = $(this).parent().data("id");
             var htmlVal = "";
             htmlVal += `
@@ -98,20 +106,22 @@
             </div>
             `;
             $(".checkedItems").append(htmlVal);
+            /* 10. 선택해제 이벤트 등록 - 이시점에 등록됨. appen 된 다음 */
+            $(".btnUncheck").off("click");
+            $(".btnUncheck").on("click", btnUncheckHandler);
         } 
-        /* checkedItems에 선택된 item을 div로 부터 제거 */
+        /* 9. checkedItems에 선택된 item을 div로 부터 제거 */
         else{
             console.log($(this).parent().data("id")); 
-            console.log($(".checkedItems>div")); 
             var dataid = $(this).parent().data("id");
-            $(".checkedItems>div").each(function(idx, item){
+            $(".checkedItems>div").each(function(idx, item) {
                 console.log($(item).data("id"));
                 if($(item).data("id") == dataid){
                     $(item).remove();
-                    // each 반복문 (function)은 더 돌지 않고 마치고 싶을때 return;
+                    // each 반복문 (function)은 더 돌지 않고 마치고 싶을때 return false;
                     // for 문은 아니므로 break; 사용 불가.
-                    return;
-                }                
+                    return false;
+                }
             });
         }
     }
