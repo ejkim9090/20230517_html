@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체선택</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        .checkboxs{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="allCheck">전체선택 : </label>
+        <input type="checkbox" id="allCheck">
+        <!-- <span>반대선택 : </span><input type="checkbox" id="revCheck"> -->
+    </div>
+    <div class="checkboxs">
+        <!-- <div>
+            <label for="id-1">id-1 : </label>
+            <input type="checkbox" id="id-1">
+        </div>
+        <div>
+            <label for="id-2">id-2 : </label>
+            <input type="checkbox" id="id-2">
+        </div> -->
+    </div>
+<script>
+    /* 1. 화면 item 구성 */
+    const itemCnt = 10;  // const 상수 = java의 final
+    // Uncaught TypeError: Assignment to constant variable. 상수선언된 변수는 값변경안됨.
+    // itemCnt = 11;
+
+    // ` 백틱 backtick : 문자열 형태 - 변수 사용시 ${변수명}
+    var htmlVal = "";
+    for(var i=1; i<itemCnt+1; i++){
+        htmlVal += `
+        <div>
+            <label for="id-${i}">id-${i} : </label>
+            <input type="checkbox" id="id-${i}" class="item">
+        </div>
+        `;
+    }
+    $(".checkboxs").append(htmlVal);
+
+
+    /* 2. 전체선택 이벤트 등록 */
+    $("#allCheck").on("click", allCheckHandler);
+    /* 4. item 이벤트 등록 */
+    $(".item").on("click", itemCheckHandler);
+
+    /* 3. 전체선택 이벤트 처리 Handler */
+    function allCheckHandler(e){
+        // attr() 메소드는 동적페이지 변화인지되지 않음.
+        // console.log($(this).attr("checked")); 
+        // prop() 메소드는 동적페이지 변화를 인지하고 그 결과값을 true/false로 줌.
+        console.log($(this).prop("checked"));  
+        // 현재 전체선택 상태 true / false - item들에 적용
+        $(".item").prop("checked", $(this).prop("checked"));
+    }
+    /* 5. item 이벤트 처리 Handler */
+    function itemCheckHandler(e){
+        //console.log($(this).prop("checked"));  
+        console.log($(".item:checked"));
+        if(itemCnt == $(".item:checked").length){
+            $("#allCheck").prop("checked", true);
+        } else{
+            $("#allCheck").prop("checked", false);
+        }
+    }
+</script>
+
+</body>
+</html>
