@@ -43,7 +43,7 @@
             // browser에서 중첩이벤트를 거의 발생시키지 않고 있음.
             // key / mouse / drag 관련 event 에 사용해 줌.
             event.stopPropagation(); event.preventDefault(); // 중첩이벤트를 없앰
-            
+
             if(e.keyCode == 13){  //if(e.key == "Enter"){
                 $("#colorBox").css("background-color", "#"+$(this).val());
             }
@@ -84,6 +84,18 @@
             <option value="blue">blue</option>
         </select>
     </div>
+
+    <div data-id="3" class="c1">3</div>
+    <div data-colorid="f00"  data-id="4" class="c1">f00</div>
+    <div data-colorid="ff0"  data-id="5" class="c1">ff0</div>
+    <div data-colorid="f00"  data-id="6" class="c1">f00</div>
+    <!--  data-대소문자구분안됨. 소문자로만 작성되어야 함.
+    <div data-colorId="f00"  data-id="6" class="c1">f00</div>
+    <DIV DATA-COLORID="f00"></DIV> -->
+    <script>
+        console.log($(".c1").eq(2).data("id"));
+        console.log($(".c1").eq(2).data("colorid"));
+    </script>
 
 </body>
 </html>
