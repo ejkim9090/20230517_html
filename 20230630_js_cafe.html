@@ -17,18 +17,68 @@
         }
 
         // 각종 기능 함수들
-        function cntBlurHandler(event){
-            console.log(this);
-            console.log(event.target);  // event.target == this
-            console.log(event);
-            // 각자 실습 
+        function cntBlurHandler(e){
+            // console.log(this);
+            // console.log(event.target);  // event.target == this
+            // console.log(event);
+            // 각자 실습
+            // console.log($(this).parent().prev().text());
+            console.log($(this).val());  // console.log(this.value);
+            $(this).parent().next().children('input.p').val(
+                $(this).parent().prev().text()
+                *
+                $(this).val()
+            );
+            var sum = 0;
+            // 합계 
+            $(".c").each(function (idx, item){
+                // each - for문은 대신함. event에 handler 를 등록함
+                // each function 에서의 this사용시 위 this와 헛갈림. 
+                //console.log(price);
+                // item = this 
+                console.log(item);
+                if(idx != ($(".c").length-1)){
+                    var i = Number($(item).val());
+                    if (isNaN(i)){
+                        i = 0;
+                    }
+                    sum += i;
+                }
+            });
+            console.log(sum);
+            $("#cTotalCnt").val(sum);
+
+            sum = 0;
+            // 합계 
+            $(".p").each(function (idx, item){
+                console.log(item);
+                if(idx != ($(".p").length-1)){
+                    // Number() 대신 * 1 로 숫자형태변경
+                    var i = $(item).val() * 1;
+                    if (isNaN(i)){
+                        i = 0;
+                    }
+                    sum += i;
+                }
+            });
+            console.log(sum);
+            $("#cTotalPrice").val(sum);
         }
-        function calcClickHandler(event){
+
+        function calcClickHandler(e){
             console.log(this);
-            console.log(event.target);  // event.target == this
-            console.log(event);
+            console.log(e.target);  // event.target == this
+            console.log(e);
             // 각자 실습
         }
+        // each경우 event handler 처럼 함수형태 만들어서 사용하지 않음 - 권장
+        // var globalValueSum = 0;
+        // function cTotalCntHandler(idx){
+        //     //console.log(price);
+        //     // item = this 
+        //     console.log(this);
+        //     globalValueSum += $(this).val();
+        // }
     </script>
 </head>
 <body>
