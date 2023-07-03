@@ -31,19 +31,19 @@
             );
             var sum = 0;
             // 합계 
-            $(".c").each(function (idx, item){
+            $(".c.in").each(function (idx, item){
                 // each - for문은 대신함. event에 handler 를 등록함
                 // each function 에서의 this사용시 위 this와 헛갈림. 
                 //console.log(price);
                 // item = this 
                 console.log(item);
-                if(idx != ($(".c").length-1)){
+                //if(idx != ($(".c").length-1)){
                     var i = Number($(item).val());
                     if (isNaN(i)){
                         i = 0;
                     }
                     sum += i;
-                }
+                //}
             });
             console.log(sum);
             $("#cTotalCnt").val(sum);
@@ -93,20 +93,26 @@
             <tr>
                 <td>아메리카노</td>
                 <td>2500</td>
-                <td><input type="text" name="c1" id="c1" class="c"></td>
-                <td><input type="text" name="c1Price" id="c1Price" class="p" readonly></td>
+                <td><input type="text" name="c1" class="c in"></td>
+                <td><input type="text" name="c1Price" class="p" readonly></td>
             </tr>
             <tr>
                 <td>라떼</td>
                 <td>3000</td>
-                <td><input type="text" name="c2" id="c2" class="c"></td>
-                <td><input type="text" name="c2Price" id="c2Price" class="p" readonly></td>
+                <td><input type="text" name="c2" class="c in"></td>
+                <td><input type="text" name="c2Price" class="p" readonly></td>
             </tr>
             <tr>
                 <td>생강라떼</td>
                 <td>4500</td>
-                <td><input type="text" name="c3" id="c3" class="c"></td>
-                <td><input type="text" name="c3Price" id="c3Price" class="p" readonly></td>
+                <td><input type="text" name="c3" class="c in"></td>
+                <td><input type="text" name="c3Price" class="p" readonly></td>
+            </tr>
+            <tr>
+                <td>딸기바나나라떼</td>
+                <td>4500</td>
+                <td><input type="text" name="c4" class="c in"></td>
+                <td><input type="text" name="c4Price" class="p" readonly></td>
             </tr>
             <tr>
                 <th>합계</th>
