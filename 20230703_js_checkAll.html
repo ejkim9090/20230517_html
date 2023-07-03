@@ -10,6 +10,11 @@
             display: grid;
             grid-template-columns: auto auto auto;
         }
+        .checkedItems {
+            border: 1px solid black;
+            padding: 10px 20px;
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
@@ -20,14 +25,20 @@
         <input type="checkbox" id="revCheck">        
     </div>
     <div class="checkboxs">
-        <!-- <div>
+        <!-- <div  data-id="1">
             <label for="id-1">id-1 : </label>
-            <input type="checkbox" id="id-1">
+            <input type="checkbox" id="id-1" >
         </div>
-        <div>
+        <div  data-id="2">
             <label for="id-2">id-2 : </label>
-            <input type="checkbox" id="id-2">
+            <input type="checkbox" id="id-2" >
         </div> -->
+    </div>
+    <div class="checkedItems">
+        <div data-id="1">
+            <span>id-1</span>
+            <button type="button" class="btnUncheck">선택해제</button>
+        </div>
     </div>
 <script>
     /* 1. 화면 item 구성 */
@@ -39,7 +50,7 @@
     var htmlVal = "";
     for(var i=1; i<itemCnt+1; i++){
         htmlVal += `
-        <div>
+        <div data-id="${i}">
             <label for="id-${i}">id-${i} : </label>
             <input type="checkbox" id="id-${i}" class="item">
         </div>
@@ -73,6 +84,35 @@
             $("#allCheck").prop("checked", true);
         } else{
             $("#allCheck").prop("checked", false);
+        }
+
+        /* checkedItems 에 선택된 item을 div로 생성 */
+        if($(this).prop("checked") == true) {
+            console.log($(this).parent().data("id")); 
+            var dataid = $(this).parent().data("id");
+            var htmlVal = "";
+            htmlVal += `
+            <div data-id="${dataid}">
+                <span>${dataid}</span>
+                <button type="button" class="btnUncheck">선택해제</button>
+            </div>
+            `;
+            $(".checkedItems").append(htmlVal);
+        } 
+        /* checkedItems에 선택된 item을 div로 부터 제거 */
+        else{
+            console.log($(this).parent().data("id")); 
+            console.log($(".checkedItems>div")); 
+            var dataid = $(this).parent().data("id");
+            $(".checkedItems>div").each(function(idx, item){
+                console.log($(item).data("id"));
+                if($(item).data("id") == dataid){
+                    $(item).remove();
+                    // each 반복문 (function)은 더 돌지 않고 마치고 싶을때 return;
+                    // for 문은 아니므로 break; 사용 불가.
+                    return;
+                }                
+            });
         }
     }
     /* 7. 반대선택 이벤트 처리 Handler */
