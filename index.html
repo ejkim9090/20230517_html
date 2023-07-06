@@ -3,11 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>전체선택</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        .checkboxs{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .checkedItems {
+            border: 1px solid black;
+            padding: 10px 20px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h2>ID와 Password를 가지고 확인함.</h2>
-    <p>DB를 통해서 id/password 일치함이 확인되면 main.html로 이동</p>
-    <p>DB를 통해서 id/password 일치하지 않으면 login_fail.html실패 화면으로 이동</p>
+    <div>
+        <label for="allCheck">전체선택 : </label>
+        <input type="checkbox" id="allCheck">
+        <label for="revCheck">반대선택 : </label>
+        <input type="checkbox" id="revCheck">        
+    </div>
+    <div class="checkboxs">
+        <!-- <div  data-id="1">
+            <label for="id-1">id-1 : </label>
+            <input type="checkbox" id="id-1" >
+        </div>
+        <div  data-id="2">
+            <label for="id-2">id-2 : </label>
+            <input type="checkbox" id="id-2" >
+        </div> -->
+    </div>
+    <div class="checkedItems">
+        <!-- <div data-id="1">
+            <span>id-1</span>
+            <button type="button" class="btnUncheck">선택해제</button>
+        </div> -->
+    </div>
+<script>
+    /* 1. 화면 item 구성 */
+    const itemCnt = 10;  // const 상수 = java의 final
+    // Uncaught TypeError: Assignment to constant variable. 상수선언된 변수는 값변경안됨.
+    // itemCnt = 11;
+
+    // ` 백틱 backtick : 문자열 형태 - 변수 사용시 ${변수명}
+    var htmlVal = "";
+    for(var i=1; i<itemCnt+1; i++){
+        htmlVal += `
+        <div data-id="${i}">
+            <label for="id-${i}">id-${i} : </label>
+            <input type="checkbox" id="id-${i}" class="item">
+        </div>
+        `;
+    }
+    $(".checkboxs").append(htmlVal);
+    /* 4. item 들 이벤트 등록 */
+    $(".item").on("click", itemCheckHandler);
+
+
+    /* 2. 전체선택 이벤트 등록 */
+    $("#allCheck").on("click", allCheckHandler);
+    /* 6. 반대선택 이벤트 등록 */
+    $("#revCheck").on("click", revCheckHandler);
+    /* 10. 선택해제 이벤트 등록 - 이시점에 등록 안됨. */
+    //$(".btnUncheck").on("click", btnUncheckHandler);
+
+    /* 11. 선택해제 이벤트 처리 handler
+        유사 - 9. checkedItems에 선택된 item을 div로 부터 제거 
+    */
+    function btnUncheckHandler(){
+        // console.log("btnUncheckHandler");
+        console.log($(this).parent().data("id"));
+        var id = $(this).parent().data("id"); 
+        
+        // 선택해제 버튼 포함 div 영역 제거
+        $(this).parent().remove();
+
+        for( var i = 0; i < $(".checkboxs > div").length ; i++ ){
+            var $element = $(".checkboxs > div").eq(i);
+            // var element = $(".checkboxs > div").get(i);
+            var element_id = $element.data("id");
+            if(element_id == id){
+                // item 중에서 같은 data-id 인 것에 checked를 해제함
+                $element.children("input.item").prop("checked", false);
+            }
+        }
+        /* 16. 선택해제 시 전체선택 버튼 해제되어야 함. */
+        $("#allCheck").prop("checked", false);
+    }
+
+    /* 3. 전체선택 이벤트 처리 Handler */
+    function allCheckHandler(e){
+        // attr() 메소드는 동적페이지 변화인지되지 않음.
+        // console.log($(this).attr("checked")); 
+        // console.log($(this).prop("checked"));  
+
+        // prop() 메소드는 동적페이지 변화를 인지하고 그 결과값을 true/false로 줌.
+        var allchecked = $(this).prop("checked");
+        
+        // 현재 전체선택 상태 true / false - item들에 적용
+        $(".item").prop("checked", allchecked);
+
+        /* 12. 전체선택 처리 후 checkedItems 에도 적용 */
+        // innerHTML 부분을 "" 으로 바꿈= 즉, 자식element들을 모두 remove 하는 효과
+        $(".checkedItems").html("");  
+        // 전체선택 checked 상태라면 모든 item들을 checkedItems에 추가
+        if(allchecked == true){  
+            var htmlVal = "";
+            for(var dataid = 1; dataid < itemCnt+1; dataid++){
+                htmlVal += `
+                <div data-id="${dataid}">
+                    <span>${dataid}</span>
+                    <button type="button" class="btnUncheck">선택해제</button>
+                </div>
+                `;
+            }
+            $(".checkedItems").append(htmlVal);
+            /* 15. 전체선택 후 이벤트 등록 - 이시점에 등록해야함. append 된 다음 */
+            $(".btnUncheck").off("click");
+            $(".btnUncheck").on("click", btnUncheckHandler);
+        }
+    }
+    /* 5. item 이벤트 처리 Handler */
+    function itemCheckHandler(e){
+        //console.log($(this).prop("checked"));  
+        console.log($(".item:checked"));
+        // 체크된 item 개수가 max개 이면 전체선택 버튼 체크되게 함.
+        if(itemCnt == $(".item:checked").length){
+            $("#allCheck").prop("checked", true);
+        } else{
+            $("#allCheck").prop("checked", false);
+        }
+
+        /* 8. checkedItems 에 선택된 item을 div로 생성 */
+        if($(this).prop("checked") == true) {
+            // console.log($(this).parent().data("id")); 
+            var dataid = $(this).parent().data("id");
+            var htmlVal = "";
+            htmlVal += `
+            <div data-id="${dataid}">
+                <span>${dataid}</span>
+                <button type="button" class="btnUncheck">선택해제</button>
+            </div>
+            `;
+            $(".checkedItems").append(htmlVal);
+            /* 10. 선택해제 이벤트 등록 - 이시점에 등록해야함. append 된 다음 */
+            $(".btnUncheck").off("click");
+            $(".btnUncheck").on("click", btnUncheckHandler);
+        } 
+        /* 9. checkedItems에 선택된 item을 div로 부터 제거 */
+        else{
+            console.log($(this).parent().data("id")); 
+            var dataid = $(this).parent().data("id");
+            $(".checkedItems>div").each(function(idx, item) {
+                console.log($(item).data("id"));
+                if($(item).data("id") == dataid){
+                    $(item).remove();
+                    // each 반복문 (function)은 더 돌지 않고 마치고 싶을때 return false;
+                    // for 문은 아니므로 break; 사용 불가.
+                    return false;
+                }
+            });
+        }
+    }
+    /* 7. 반대선택 이벤트 처리 Handler */
+    function revCheckHandler(e){
+        /* 13. 반대선택 시 checkedItems 에도 적용 
+        checkedItems 자식노드 모두 제거 -- true 상태인 것들은 추가
+        */
+        // checkedItems 자식노드 모두 제거
+        $(".checkedItems").html("");
+
+        // 반대선택 - item들의 checked 상태의 반대 적용
+        $(".item").each(function(idx, item){
+            // console.log(idx);
+            // console.log(status);
+            var status = $(item).prop("checked");
+            // 현재 status 상태의 반대 상태인 !status 을 설정함
+            $(item).prop("checked", !status);
+           
+            // true 상태인 것들은 추가
+            if(!status == true){
+                var dataid = $(item).parent().data("id");
+                var htmlVal = "";
+                htmlVal += `
+                <div data-id="${dataid}">
+                    <span>${dataid}</span>
+                    <button type="button" class="btnUncheck">선택해제</button>
+                </div>
+                `;
+                $(".checkedItems").append(htmlVal);
+            }
+        });
+        /* 14. 반대선택 후 이벤트 등록 - 이시점에 등록해야함. append 된 다음 */
+        $(".btnUncheck").off("click");
+        $(".btnUncheck").on("click", btnUncheckHandler);
+
+        /* 17.체크된 item 개수가 max개 이면 전체선택 버튼 체크되게 함. */
+        if(itemCnt == $(".item:checked").length){
+            $("#allCheck").prop("checked", true);
+        } else{
+            $("#allCheck").prop("checked", false);
+        }
+
+    }
+</script>
+
 </body>
 </html>
