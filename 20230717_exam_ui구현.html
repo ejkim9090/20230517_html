@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        .required {
+            display: none; 
+        }
+        .hint{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post" id="frmJoin">
+        <table>
+            <tr>
+                <td class="join tid">아이디</td>
+                <td colspan="3" class="tid"><input type="text" class="mid" required></td>
+            </tr>
+            <tr>
+                <td class="hidden"></td>
+                <td colspan="3" class="required">필수 입력 항목 입니다</td>
+            </tr>
+            <tr>
+                <td class="join">패스워드</td>
+                <td colspan="3"><input type="password" class="mpwd1" required></td>
+            </tr>
+            <tr>
+                <td class="hidden"></td>
+                <td colspan="3" class="hint">영문자 대/소문자, 특수문자, 숫자 포함 8~32자</td>
+            </tr>
+            <tr>
+                <td class="hidden"></td>
+                <td colspan="3" class="required">필수 입력 항목 입니다</td>
+            </tr>
+            <tr>
+                <td class="join">패스워드 확인</td>
+                <td colspan="3"><input type="password" class="mpwd2" required></td>
+            </tr>
+            <tr>
+                <td class="hidden"></td>
+                <td colspan="3" class="hint">영문자 대/소문자, 특수문자, 숫자 포함 8~32자</td>
+            </tr>
+            <tr>
+                <td class="hidden"></td>
+                <td colspan="3" class="required">필수 입력 항목 입니다</td>
+            </tr>
+            <tr>
+                <td class="join">이메일</td>
+                <td colspan="3" class="email"><p><input type="text" class="email"><label>@</label><input type="text" class="email"></p></td>
+            </tr>
+            <tr>
+                <td class="join">주소</td>
+                <td colspan="3"><input type="text" class="addr1"></td>
+            </tr>
+            <tr>
+                <td class="join addr"></td>
+                <td colspan="3" class="addr"><input type="text" class="addr2"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="btn"><button type="button">가 입</button></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        // - 사용하지 마세요. var pwdElements = document.querySelectorAll("#pwd");
+        var pwdElement = document.querySelector("#pwd");
+        var pwdElement = document.getElementById("pwd");
+        var $pwdElement = $("#pwd");
+        var a = $(".addr2").val();
+        $(".required").html(); // 동일   $(".required").text();
+        $(".btn").html();  // <button type="button">가 입</button>
+        $(".btn").text();  // 가입
+        $(".mid, .mpwd1, .mpwd2").blur(function(){
+            //필수항목입니다. 나타나거나. 사라지거나
+            if($(this).val().length < 1){
+                if($(this).parents("tr").next().children(".required").length == 0){
+                    $(this).parents("tr").next().children(".hint").css("display", "none");
+                    $(this).parents("tr").next().next().children(".required").css("display", "table-cell");
+                } else {
+                    $(this).parents("tr").next().children(".required").css("display", "table-cell");
+                }
+            } else {
+                if($(this).parents("tr").next().children(".required").length == 0){
+                    $(this).parents("tr").next().children(".hint").css("display", "none");
+                    $(this).parents("tr").next().next().children(".required").css("display", "none");
+                } else {
+                    $(this).parents("tr").next().children(".required").css("display", "none");
+                }
+            }
+        });
+
+
+        $(".mpwd1, .mpwd2").focusin(function(){
+            $(this).parents("tr").next().children(".hint").css("display", "table-cell");
+        });
+    </script>
+</body>
+</html>

@@ -1,155 +1,106 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        ul{
-            padding-left: 5px;
+    <title>카페 포스기</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link href="/resources/css/reset.css" rel="stylesheet">
+    <!-- style 지정 - 각자 실습 -->
+    <!--  -->
+    <script>
+        $(loadedHandler);
+        function loadedHandler(){
+            // event 등록 
+            $('.c').on("blur", cntBlurHandler);
+            $("[type=button]").on("click", calcClickHandler);
         }
-    </style>
+
+        // 각종 기능 함수들
+    
+        function cntBlurHandler(event){
+            console.log(this);
+            console.log(event.target);  // event.target == this
+            console.log(event);
+            // 각자 실습 
+            console.log('==================');
+            var num1 = Number($('#c1').val());
+            console.log(typeof(num1));
+            console.log(num1);
+            $('#c1Price').val(num1*2500);
+            console.log(typeof($('#c1Price').val()));
+
+            var num2 = Number($('#c2').val());
+            console.log(typeof(num2));
+            console.log(num2);
+            $('#c2Price').val(num2*3000);
+            console.log(typeof($('#c2Price').val()));
+
+            var num3 = Number($('#c3').val());
+            console.log(typeof(num3));
+            console.log(num3);
+            $('#c3Price').val(num3*4500);
+            console.log(typeof($('#c3Price').val()));
+        }   
+            
+        
+        function calcClickHandler(event){
+            console.log(this);
+            console.log(event.target);  // event.target == this
+            console.log(event);
+            // 각자 실습
+            var num1 = Number($('#c1').val());
+            var num2 = Number($('#c2').val());
+            var num3 = Number($('#c3').val());
+            var total1 = Number($('#c1Price').val())
+            var total2 = Number($('#c2Price').val())
+            var total3 = Number($('#c3Price').val())
+            $('#cTotalPrice').val(total1+total2+total3);
+            $('#cTotalCnt').val(num1+num2+num3);
+        }
+    </script>
 </head>
-
 <body>
-    <div>
-        <table>
-            <tr>
-                <td>내용 1</td>
-                <td>내용 2</td>
-                <td>내용 3</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-
-        <figure>
-            <figcaption>[표/그림]제목</figcaption>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <td>이름</td>
-                        <td>이름</td>
-                        <td>이름</td>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <td>김영희</td>
-                        <td>김영희</td>
-                        <td>김영희</td>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    <tr>
-                        <td>홍길동</td>
-                        <td>홍길동</td>
-                        <td>홍길동</td>
-                    </tr>
-                    <tr>
-                        <td>이름</td>
-                        <td>홍길동</td>
-                        <td>김영희</td>
-                    </tr>
-                </tbody>
-
-            </table>
-            <figcaption>[표/그림]제목</figcaption>
-        </figure>
+    <form>
         <table border="1">
-            <caption>[표1 제목]</caption>
             <tr>
-                <th>이름</th>
-                <th>홍길동</th>
-                <th>김영희</th>
+                <th>메뉴</th>
+                <th>가격</th>
+                <th>수량</th>
+                <th>합계</th>
             </tr>
             <tr>
-                <th>111111</th>
-                <td colspan="2" rowspan="2">2111111 31</td>
+                <td>아메리카노</td>
+                <td>2500</td>
+                <td><input type="text" name="c1" id="c1" class="c"></td>
+                <td><input type="text" name="c1Price" id="c1Price" class="p" readonly></td>
             </tr>
             <tr>
-                <th>1111111</th>
+                <td>라떼</td>
+                <td>3000</td>
+                <td><input type="text" name="c2" id="c2" class="c"></td>
+                <td><input type="text" name="c2Price" id="c2Price" class="p" readonly></td>
             </tr>
             <tr>
-                <th rowspan="2">2111111</td>
-                <td>2111111</td>
-                <th>3111111</th>
+                <td>생강라떼</td>
+                <td>4500</td>
+                <td><input type="text" name="c3" id="c3" class="c"></td>
+                <td><input type="text" name="c3Price" id="c3Price" class="p" readonly></td>
             </tr>
             <tr>
-                <td>2111111</td>
-                <td>3111111</td>
+                <th>합계</th>
+                <th></th>
+                <th><input type="text" name="cTotalCnt" id="cTotalCnt" class="c" readonly></th>
+                <th><input type="text" name="cTotalPrice" id="cTotalPrice" class="p" readonly></th>
             </tr>
-            <caption>[표2 제목]</caption>
+            <tr>
+                <td colspan="4">
+                    <input type="button" value="계산하기">
+                    <input type="reset">
+                </td>
+            </tr>
         </table>
-    </div>
-    <hr>
-    <div>
-        <div>목록타이틀</div>
-        <ul>
-            <li>목록1</li>
-            <li>목록2</li>
-            <li>목록3</li>
-        </ul>
-        <div>목록타이틀</div>
-        <ol type="A" start="5">
-            <li>목록1</li>
-            <li>목록2</li>
-            <li>목록3</li>
-        </ol>
-        <dl>
-            <dt>목록제목</dt>
-            <dd>목록2</dd>
-            <dd>목록3</dd>
-            <dt>목록제목</dt>
-            <dd>목록2</dd>
-            <dd>목록3</dd>
-        </dl>
-
-    </div>
-
-
-    <div>
-        <pre>
-            안녕하세요. 
-    태그는 수평분할시에 사용합니다. 
-            이렇게
-        </pre>
-    </div>
-    <hr>
-
-    <div>Lorem <abbr title="abbr">ipsum</abbr> <cite>dolor</cite> sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum.</div>
-    <div title="abbr">Hello Java div</div>
-    <div>Hello Java div</div>
-
-    <div>Hello<q title="abbr">인용 내용</q> <small><b><mark>Java</mark></b></small> div</div>
-    <div>Hello <blockquote>인용 내용</blockquote> Java div</div>
-    <div>Hello Java div</div>
-    <hr>
-    <h4>Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java 10</h4>
-    <h4 a="b" c='100' d='ej kim"s'>
-        Hello<br><br><br>Java
-        10</h4>
-    <h2 a="b" c='100' d="ej kim">Hello <b>Java</b> 10</h2>
-    <h1 a="b" c='100' d="ej kim">Hello <small><small>Java</small></small> 10</h1>
-    <h6 a="b" c='100' d="ej kim">Hello Java 10</h6>
+    </form>
 </body>
-
 </html>
+

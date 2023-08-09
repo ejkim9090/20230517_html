@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전체선택</title>
-    <script src="/resources/"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <style>
         .checkboxs{
             display: grid;
@@ -19,7 +19,7 @@
 </head>
 <body>
     <div>
-        <label for="allCheck">전체선택 : </label>
+        <label for="allCheck" id="aaa">전체선택 : </label>
         <input type="checkbox" id="allCheck">
         <label for="revCheck">반대선택 : </label>
         <input type="checkbox" id="revCheck">        
@@ -119,7 +119,7 @@
                 `;
             }
             $(".checkedItems").append(htmlVal);
-            /* 15. 전체선택 후 이벤트 등록 - 이시점에 등록해야함. appen 된 다음 */
+            /* 15. 전체선택 후 이벤트 등록 - 이시점에 등록해야함. append 된 다음 */
             $(".btnUncheck").off("click");
             $(".btnUncheck").on("click", btnUncheckHandler);
         }
@@ -147,7 +147,7 @@
             </div>
             `;
             $(".checkedItems").append(htmlVal);
-            /* 10. 선택해제 이벤트 등록 - 이시점에 등록해야함. appen 된 다음 */
+            /* 10. 선택해제 이벤트 등록 - 이시점에 등록해야함. append 된 다음 */
             $(".btnUncheck").off("click");
             $(".btnUncheck").on("click", btnUncheckHandler);
         } 
@@ -195,7 +195,7 @@
                 $(".checkedItems").append(htmlVal);
             }
         });
-        /* 14. 반대선택 후 이벤트 등록 - 이시점에 등록해야함. appen 된 다음 */
+        /* 14. 반대선택 후 이벤트 등록 - 이시점에 등록해야함. append 된 다음 */
         $(".btnUncheck").off("click");
         $(".btnUncheck").on("click", btnUncheckHandler);
 
