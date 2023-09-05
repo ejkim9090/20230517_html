@@ -18,6 +18,66 @@
     </style>
 </head>
 <body>
+    <script>
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const qConnect= [...q1,...q2];
+        console.log(qConnect);
+        q1.push(q2);
+        q1.push(function (){console.log("f1")});
+        console.log(q1);
+        const q3 = [10,20,40,50];
+        let maxValue = Math.max(10,20,40,50);
+        let maxValue2 = Math.max([10,20,40,50]);
+        let maxValue3 = Math.max(...q3);
+        console.log(maxValue3);
+
+        const [a,b] = [10, 20];
+        conosle.log(a);  //10
+        const [c,d,e] = q1;
+
+        //immutable 변경 불가
+        //자료형변경을 불가하게 함.
+        // var g = 10; // number
+        // g="aaa"; // string
+        // g=[]; // object (Array)
+        // g=function(){}; // function
+
+        class Car {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            a1 = 10;
+            f1 = function(){ console.log("car f1함수")};
+            kickname = "";
+        }
+        let myfirstcar = new Car("sm5", 2022);
+        myfirstcar.f1();
+        myfirstcar.nickname = "붕붕이";
+        console.log(myfirstcar);
+
+        window.a2={};
+        a2.k1 = "홍길동";
+        a2.k2 = function(){console.log("a2의 k2함수- 나이계산")};
+        console.log(a2);
+        a2.k2();
+        a3 = {};
+        a3.k1 = "철수";
+        a3.k2 = function(){console.log("a2의 k2함수- 나이계산")};
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
     <div>
         <label for="allCheck">전체선택 : </label>
         <input type="checkbox" id="allCheck">
