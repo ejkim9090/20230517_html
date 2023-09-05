@@ -5,6 +5,7 @@ import LifecycleEx from './R004_LifecycleEx';
 import $ from 'jquery';
 
 function App() {
+  // 18, 20, 21, 23
   return (
     <div className="App">
       <ImportComponent></ImportComponent>
