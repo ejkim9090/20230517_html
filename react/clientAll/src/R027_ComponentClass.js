@@ -19,11 +19,12 @@ class R027_ComponentClass extends Component {
   }
 
   render() {
-    console.log('render() 실행')
+    console.log('render() 실행');
     return (
       <div>
-        <button onClick={e => this.buttonClick('String')}>{this.state.StateString}</button>
-        <button onClick={e => this.buttonClick('ArrayObject')}>{this.state.StateArrayObj[1].react}</button>
+        <button onClick={e => this.buttonClick('String')}>문자변경{this.state.StateString}</button>
+        <button onClick={e => this.buttonClick('ArrayObject')}>객체변경{this.state.StateArrayObj[1].react}</button>
+        <button onClick={e => this.buttonClick('ArrayObject')}>객체변경2{this.state.StateArrayObj[0]}</button>
       </div>
     )
   }

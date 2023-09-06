@@ -24,6 +24,7 @@ class R028_PureComponentClass extends PureComponent {
       <div>
         <button onClick={e => this.buttonClick('String')}>{this.state.StateString}</button>
         <button onClick={e => this.buttonClick('ArrayObject')}>{this.state.StateArrayObj[1].react}</button>
+        <button onClick={e => this.buttonClick('ArrayObject')}>{this.state.StateArrayObj[0]}</button>
       </div>
     )
   }
