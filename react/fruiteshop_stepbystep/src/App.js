@@ -98,7 +98,11 @@ function App() {
     const {name, value} = event.target;
     console.log(name);
     console.log(value);
-    
+    console.log("---------s");
+    console.log(newFruit);
+    setNewFruit({...newFruit, [name]:value});
+    console.log(newFruit);  // 변경됨 바로 확인 안됨!!
+    console.log("---------e");
   }
   const Insert = ()=>{
     return (
@@ -111,9 +115,9 @@ function App() {
           </ul>
         </nav>
         <div>
-          <div><span>이름</span><input onChange={onChangeHandler} name="name"></input></div>
-          <div><span>가격</span><input onChange={onChangeHandler} name="price"></input></div>
-          <div><span>수량</span><input onChange={onChangeHandler} name="amount"></input></div>
+          <div><span>이름</span><input onChange={onChangeHandler} name="name" value={newFruit.name}></input></div>
+          <div><span>가격</span><input onChange={onChangeHandler} name="price" value={newFruit.price}></input></div>
+          <div><span>수량</span><input onChange={onChangeHandler} name="amount" value={newFruit.amount}></input></div>
           <div><button onClick={onClickHandler} >등록</button></div>
         </div>
       </>
