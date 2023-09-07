@@ -95,6 +95,10 @@ function App() {
     console.log(event.target);  // js에서 event 발생하면 매개인자로 event 전달됨. 그것을 확인함.!!!
     console.log(event.target.name);
     console.log(event.target.value);
+    const {name, value} = event.target;
+    console.log(name);
+    console.log(value);
+    
   }
   const Insert = ()=>{
     return (
