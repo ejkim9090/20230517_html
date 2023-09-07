@@ -1,7 +1,38 @@
 import './App.css';
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+
+  // 추가기능(input입력된 값)에서 사용할 저장공간
+  const [newFruit, setNewFruit]  = useState(
+    {
+      name : "",
+      price : "",
+      amount : ""
+    }
+  );
+
+  // 목록조회를 위한 저장공간
+  const [fruitList, setFruitList] = useState(
+    [
+      {
+        name : "수박",
+        price : "10000",
+        amount : "20"
+      },
+      {
+        name : "참외",
+        price : "3000",
+        amount : "100"
+      }
+      // 이 부분에 추가 될 예정
+    ]
+  );
+
+
+
+
   const Home = ()=>{
     return (
       <>
