@@ -88,7 +88,10 @@ function App() {
   const onClickHandler = (event)=>{
     console.log("꼭 확인 !!! 클릭");
     console.log(event.target); // js에서 event 발생하면 매개인자로 event 전달됨. 그것을 확인함.!!!
-
+    console.log("---------insert");
+    console.log(newFruit);
+    // 추가기능용 저장공간 newFruit 을 목록용 저장공간 fruitList 에 추가하기
+    setFruitList([...fruitList, newFruit]);
   }
   const onChangeHandler = (event)=>{
     console.log("꼭 확인 !!! 변경");
@@ -100,6 +103,7 @@ function App() {
     console.log(value);
     console.log("---------s");
     console.log(newFruit);
+    // 추가기능용 저장공간 newFruit 에 값변경
     setNewFruit({...newFruit, [name]:value});
     console.log(newFruit);  // 변경됨 바로 확인 안됨!!
     console.log("---------e");
