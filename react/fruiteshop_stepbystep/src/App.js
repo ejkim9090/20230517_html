@@ -1,10 +1,18 @@
 import './App.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 
 function App() {
   const Home = ()=>{
     return (
-      <h1>홈</h1>
+      <>
+        <h1>홈</h1>
+        <nav>
+          <ul>
+            <li><Link to="/list">과일목록</Link></li>
+            <li><Link to="/insert">과일추가</Link></li>
+          </ul>
+        </nav>
+      </>
     );
   }
   const List = ()=>{
