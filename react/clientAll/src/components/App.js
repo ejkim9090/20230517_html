@@ -15,7 +15,6 @@ import reactRouter2 from './R089_reactRouter2';
 import reactThrottle from './R095_reactThrottle';
 import floatingPopulationList from './floatingPopulationList';
 
-
 function App() {
   return (
     <div className="App">
