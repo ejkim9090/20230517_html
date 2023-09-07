@@ -31,8 +31,6 @@ function App() {
   );
 
 
-
-
   const Home = ()=>{
     return (
       <>
@@ -66,16 +64,20 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>이름1</td>
-                <td>가격1</td>
-                <td>수량1</td>
-              </tr>
-              <tr>
-                <td>이름2</td>
-                <td>가격2</td>
-                <td>수량2</td>
-              </tr>
+              {  // return () 에서 js 문법 사용을 위해 중괄호 사용
+                fruitList.map(
+                  (fruit) => {
+                    // return () 에서 render하고 싶은 내용을 작성
+                    return (
+                      <tr>
+                        <td>{fruit.name}</td>
+                        <td>{fruit.price}</td>
+                        <td>{fruit.amount}</td>
+                      </tr>
+                    )
+                  }
+                )
+              }
             </tbody>
           </table>
         </div>
