@@ -17,12 +17,28 @@ function App() {
   }
   const List = ()=>{
     return (
-      <h1>과일목록</h1>
+      <>
+        <h1>과일목록</h1>
+        <nav>
+          <ul>
+            <li><Link to="/insert">과일추가</Link></li>
+            <li><Link to="/">홈</Link></li>
+          </ul>
+        </nav>
+      </>
     );
   }
   const Insert = ()=>{
     return (
-      <h1>과일추가</h1>
+      <>
+        <h1>과일추가</h1>
+        <nav>
+          <ul>
+            <li><Link to="/list">과일목록</Link></li>
+            <li><Link to="/">홈</Link></li>
+          </ul>
+        </nav>
+      </>
     );
   }
   return (
