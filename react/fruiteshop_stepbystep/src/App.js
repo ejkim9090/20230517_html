@@ -124,6 +124,7 @@ function App() {
           <div><span>수량</span><input onChange={onChangeHandler} name="amount" value={newFruit.amount}></input></div>
           <div><button onClick={onClickHandler} >등록</button></div>
         </div>
+        <List></List>
       </>
     );
   }
