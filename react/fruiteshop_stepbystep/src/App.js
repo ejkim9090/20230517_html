@@ -84,11 +84,17 @@ function App() {
       </>
     );
   }
-  const onClickHandler = ()=>{
-    console.log("클릭");
+
+  const onClickHandler = (event)=>{
+    console.log("꼭 확인 !!! 클릭");
+    console.log(event.target); // js에서 event 발생하면 매개인자로 event 전달됨. 그것을 확인함.!!!
+
   }
-  const onChangeHandler = ()=>{
-    console.log("변경");
+  const onChangeHandler = (event)=>{
+    console.log("꼭 확인 !!! 변경");
+    console.log(event.target);  // js에서 event 발생하면 매개인자로 event 전달됨. 그것을 확인함.!!!
+    console.log(event.target.name);
+    console.log(event.target.value);
   }
   const Insert = ()=>{
     return (
@@ -101,10 +107,10 @@ function App() {
           </ul>
         </nav>
         <div>
-          <div><span>이름</span><input onChange={onChangeHandler}></input></div>
-          <div><span>가격</span><input onChange={onChangeHandler}></input></div>
-          <div><span>수량</span><input onChange={onChangeHandler}></input></div>
-          <div><button onClick={onClickHandler}>등록</button></div>
+          <div><span>이름</span><input onChange={onChangeHandler} name="name"></input></div>
+          <div><span>가격</span><input onChange={onChangeHandler} name="price"></input></div>
+          <div><span>수량</span><input onChange={onChangeHandler} name="amount"></input></div>
+          <div><button onClick={onClickHandler} >등록</button></div>
         </div>
       </>
     );
