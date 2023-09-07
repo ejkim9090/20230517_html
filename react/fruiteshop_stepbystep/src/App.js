@@ -84,6 +84,12 @@ function App() {
       </>
     );
   }
+  const onClickHandler = ()=>{
+    console.log("클릭");
+  }
+  const onChangeHandler = ()=>{
+    console.log("변경");
+  }
   const Insert = ()=>{
     return (
       <>
@@ -95,10 +101,10 @@ function App() {
           </ul>
         </nav>
         <div>
-          <div><span>이름</span><input></input></div>
-          <div><span>가격</span><input></input></div>
-          <div><span>수량</span><input></input></div>
-          <div><button>등록</button></div>
+          <div><span>이름</span><input onChange={onChangeHandler}></input></div>
+          <div><span>가격</span><input onChange={onChangeHandler}></input></div>
+          <div><span>수량</span><input onChange={onChangeHandler}></input></div>
+          <div><button onClick={onClickHandler}>등록</button></div>
         </div>
       </>
     );
