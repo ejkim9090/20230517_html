@@ -97,9 +97,15 @@ function App() {
   }
 
   const onClickHandler = (event)=>{
-    // 유효성검사
+    // 유효성검사 빈칸
     if(!newFruit.name || !newFruit.price || !newFruit.amount ){
       alert("모든값을 입력해주세요.")
+      return;
+    }
+    // 유효성검사 - 같은 name 없도록
+    const isExist = fruitList.some((fruit)=>fruit.name == newFruit.name);
+    if(isExist){
+      alert("이미 등록된 과일이름입니다. 다시 추가해주세요.");
       return;
     }
 
