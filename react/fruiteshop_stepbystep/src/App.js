@@ -97,6 +97,15 @@ function App() {
   }
 
   const onClickHandler = (event)=>{
+    // 유효성검사
+    if(!newFruit.name || !newFruit.price || !newFruit.amount ){
+      alert("모든값을 입력해주세요.")
+      return;
+    }
+
+
+
+
     console.log("꼭 확인 !!! 클릭");
     console.log(event.target); // js에서 event 발생하면 매개인자로 event 전달됨. 그것을 확인함.!!!
     console.log("---------insert");
