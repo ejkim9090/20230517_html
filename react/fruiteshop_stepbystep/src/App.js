@@ -32,6 +32,27 @@ function App() {
 
 
   const Home = ()=>{
+
+    const arr1 = [10,20,30];
+    arr1.push(40);
+    const arr2 = arr1;  // 주소복사(얕은복사)
+    arr2.push(50);
+    console.log(arr1);
+    console.log(arr2);
+
+    const arr3 = []; // 깊은복사
+    arr3[0] = arr1[0];
+    arr3[1] = arr1[1];
+    console.log(arr3);
+
+    const arr4 = [arr1]; // 깊은복사- 아님 
+    console.log(arr4);
+    const arr5 = [arr1[0], arr1[1], arr2[2]]; // 깊은복사
+    console.log(arr5);
+    const arr6 = [...arr1]; // 깊은복사
+    console.log(arr6);
+
+
     return (
       <>
         <h1>홈</h1>
@@ -103,7 +124,7 @@ function App() {
       return;
     }
     // 유효성검사 - 같은 name 없도록
-    const isExist = fruitList.some((fruit)=>fruit.name == newFruit.name);
+    const isExist = fruitList.some((fruit)=>fruit.name == newFruit.name || fruit.price == newFruit.price ||fruit.amount == newFruit.amount);
     if(isExist){
       alert("이미 등록된 과일이름입니다. 이름을 다시 입력해주세요.");
       // 이름 입력란을 공란으로 만들기
@@ -119,7 +140,7 @@ function App() {
     setFruitList([...fruitList, newFruit]);
 
     // 이름,가격,수량 입력란을 공란으로 만들기
-    setNewFruit({ name : "",  price : "",   amount : "" });
+    setNewFruit({ name : "",  price : "",   amount : ""  });
   }
   const onChangeHandler = (event)=>{
     console.log("꼭 확인 !!! 변경");
