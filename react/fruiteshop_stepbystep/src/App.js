@@ -105,12 +105,11 @@ function App() {
     // 유효성검사 - 같은 name 없도록
     const isExist = fruitList.some((fruit)=>fruit.name == newFruit.name);
     if(isExist){
-      alert("이미 등록된 과일이름입니다. 다시 추가해주세요.");
+      alert("이미 등록된 과일이름입니다. 이름을 다시 입력해주세요.");
+      // 이름 입력란을 공란으로 만들기
+      setNewFruit({...newFruit, ["name"]:""});
       return;
     }
-
-
-
 
     console.log("꼭 확인 !!! 클릭");
     console.log(event.target); // js에서 event 발생하면 매개인자로 event 전달됨. 그것을 확인함.!!!
@@ -118,6 +117,9 @@ function App() {
     console.log(newFruit);
     // 추가기능용 저장공간 newFruit 을 목록용 저장공간 fruitList 에 추가하기
     setFruitList([...fruitList, newFruit]);
+
+    // 이름,가격,수량 입력란을 공란으로 만들기
+    setNewFruit({ name : "",  price : "",   amount : "" });
   }
   const onChangeHandler = (event)=>{
     console.log("꼭 확인 !!! 변경");
