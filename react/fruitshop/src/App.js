@@ -164,6 +164,8 @@ const Home = () => {
 }
 
 
+function a1() { console.log(); }
+function a1() { console.log(); }
 
 const f0 = function () { console.log(); }
 const f1 = function (data, a) { console.log(); }

@@ -73,8 +73,9 @@ function App() {
                         <td>{fruit.name}</td>
                         <td>{fruit.price}</td>
                         <td>{fruit.amount}</td>
+                        <td><button onClick={ () => {console.log("aaa"); onClickDeleteHandler(fruit.name);}  }>삭제</button></td>
                       </tr>
-                    )
+                    );
                   }
                 )
               }
@@ -83,6 +84,11 @@ function App() {
         </div>
       </>
     );
+  }
+
+  const onClickDeleteHandler = (name) => {
+    console.log(name);
+    
   }
 
   const onClickHandler = (event)=>{
