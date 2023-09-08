@@ -92,7 +92,8 @@ function App() {
     console.log(filteredFruitListTest);
     const filteredFruitList = fruitList.filter((fruit)=>fruit.name != name);
     console.log(filteredFruitList);
-
+    // 목록용 저장공간 fruitList
+    setFruitList(filteredFruitList);
   }
 
   const onClickHandler = (event)=>{
