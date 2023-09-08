@@ -88,7 +88,11 @@ function App() {
 
   const onClickDeleteHandler = (name) => {
     console.log(name);
-    
+    const filteredFruitListTest = fruitList.filter((fruit)=>fruit.name == name);
+    console.log(filteredFruitListTest);
+    const filteredFruitList = fruitList.filter((fruit)=>fruit.name != name);
+    console.log(filteredFruitList);
+
   }
 
   const onClickHandler = (event)=>{
